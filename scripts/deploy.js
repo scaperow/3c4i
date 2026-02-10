@@ -96,6 +96,27 @@ async function deploy() {
     process.exit(1);
   }
   
+  // 5.5 修复 _routes.json 重叠规则问题
+  console.log('🔧 修复 _routes.json...');
+  try {
+    const routesPath = path.join(process.cwd(), '.vercel', 'output', 'static', '_routes.json');
+    if (fs.existsSync(routesPath)) {
+      const routesContent = fs.readFileSync(routesPath, 'utf8');
+      const routes = JSON.parse(routesContent);
+      
+      // 修复重叠规则：移除被其他规则包含的路径
+      // /_next/static/* 被 /_next/* 包含，所以移除 /_next/static/*
+      if (routes.exclude) {
+        routes.exclude = routes.exclude.filter(rule => rule !== '/_next/static/*');
+      }
+      
+      fs.writeFileSync(routesPath, JSON.stringify(routes));
+      console.log('✅ _routes.json 已修复\n');
+    }
+  } catch (e) {
+    console.log('⚠️  修复 _routes.json 时出错，继续部署...\n');
+  }
+  
   // 6. 部署到 Cloudflare
   console.log('☁️  部署到 Cloudflare...');
   try {

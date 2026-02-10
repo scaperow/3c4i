@@ -52,7 +52,7 @@
       "continue": true
     },
     {
-      "src": "^/_next/data/build\\-1770714629588/(.*).json",
+      "src": "^/_next/data/build\\-1770731611734/(.*).json",
       "dest": "/$1",
       "override": true,
       "continue": true,
@@ -82,7 +82,7 @@
         {
           "type": "header",
           "key": "x-prerender-revalidate",
-          "value": "101d7b9237a3b7636de5358828931627"
+          "value": "488ab8a70e77f58d0f33c6b80c535aa3"
         }
       ],
       "middlewarePath": "src/middleware",
@@ -99,7 +99,7 @@
           "key": "x-nextjs-data"
         }
       ],
-      "dest": "/_next/data/build-1770714629588/index.json",
+      "dest": "/_next/data/build-1770731611734/index.json",
       "continue": true,
       "override": true
     },
@@ -111,7 +111,7 @@
           "key": "x-nextjs-data"
         }
       ],
-      "dest": "/_next/data/build-1770714629588/$1.json",
+      "dest": "/_next/data/build-1770731611734/$1.json",
       "continue": true,
       "override": true
     },
@@ -151,7 +151,7 @@
       "handle": "filesystem"
     },
     {
-      "src": "^/_next/data/build\\-1770714629588/(.*).json",
+      "src": "^/_next/data/build\\-1770731611734/(.*).json",
       "dest": "/$1",
       "continue": true,
       "has": [
@@ -227,7 +227,7 @@
           "key": "x-nextjs-data"
         }
       ],
-      "dest": "/_next/data/build-1770714629588/index.json",
+      "dest": "/_next/data/build-1770731611734/index.json",
       "continue": true
     },
     {
@@ -238,11 +238,11 @@
           "key": "x-nextjs-data"
         }
       ],
-      "dest": "/_next/data/build-1770714629588/$1.json",
+      "dest": "/_next/data/build-1770731611734/$1.json",
       "continue": true
     },
     {
-      "src": "^/_next/data/build\\-1770714629588/(.*).json",
+      "src": "^/_next/data/build\\-1770731611734/(.*).json",
       "headers": {
         "x-nextjs-matched-path": "/$1"
       },
@@ -250,14 +250,14 @@
       "override": true
     },
     {
-      "src": "^/_next/data/build\\-1770714629588/(.*).json",
+      "src": "^/_next/data/build\\-1770731611734/(.*).json",
       "dest": "__next_data_catchall"
     },
     {
       "handle": "hit"
     },
     {
-      "src": "/_next/static/(?:[^/]+/pages|pages|chunks|runtime|css|image|media|build\\-1770714629588)/.+",
+      "src": "/_next/static/(?:[^/]+/pages|pages|chunks|runtime|css|image|media|build\\-1770731611734)/.+",
       "headers": {
         "cache-control": "public,max-age=31536000,immutable"
       },
