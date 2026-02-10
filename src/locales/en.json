@@ -1141,6 +1141,302 @@
             "Establish emotional regulation mechanisms."
           ]
         }
+      },
+      "ISTJ": {
+        "title": "Logistician",
+        "description": "Practical and reliable organizers who focus on details and efficiency, the stable force of society.",
+        "strengths": [
+          "Responsible",
+          "Reliable",
+          "Detail-oriented",
+          "Logical"
+        ],
+        "weaknesses": [
+          "Stubborn",
+          "Inflexible",
+          "Too serious",
+          "Emotionally reserved"
+        ],
+        "careers": [
+          "Accountant",
+          "Project Manager",
+          "Auditor",
+          "Civil Servant",
+          "Quality Control"
+        ],
+        "workplace": "Structured environments with clear rules that value efficiency and professionalism.",
+        "relationships": "Loyal and committed, values partners who share their sense of responsibility and stability.",
+        "aiAnalysis": {
+          "insights": [
+            "Your sense of responsibility and reliability make you the most trustworthy team member.",
+            "Attention to detail ensures high-quality work completion.",
+            "Practical attitude helps establish a stable and reliable life foundation."
+          ],
+          "recommendations": [
+            "Learn to be flexible and accept change and innovation.",
+            "Develop emotional expression skills to improve relationships.",
+            "Maintain an open mind while upholding principles."
+          ]
+        }
+      },
+      "ISFJ": {
+        "title": "Defender",
+        "description": "Warm-hearted protectors who quietly dedicate themselves and care about others' needs.",
+        "strengths": [
+          "Compassionate",
+          "Patient",
+          "Loyal",
+          "Helpful"
+        ],
+        "weaknesses": [
+          "Overly modest",
+          "Difficulty saying no",
+          "Conflict-avoidant",
+          "Self-sacrificing"
+        ],
+        "careers": [
+          "Nurse",
+          "Teacher",
+          "Social Worker",
+          "Administrative Assistant",
+          "Customer Service"
+        ],
+        "workplace": "Harmonious and friendly environments where they can serve others with stable routines.",
+        "relationships": "Gentle and considerate, selflessly giving, needs relationships where they are appreciated and recognized.",
+        "aiAnalysis": {
+          "insights": [
+            "Your compassion and patience make you an emotional pillar for others.",
+            "Quiet dedication deserves to be seen and cherished by more people.",
+            "Maintenance of harmonious atmosphere contributes to team cohesion."
+          ],
+          "recommendations": [
+            "Learn to express your own needs instead of constantly sacrificing.",
+            "Establish healthy interpersonal boundaries.",
+            "Face conflicts bravely and learn to express differences healthily."
+          ]
+        }
+      },
+      "ESTJ": {
+        "title": "Executive",
+        "description": "Efficient and practical managers who excel at organization and execution, valuing tradition and order.",
+        "strengths": [
+          "Organized",
+          "Decisive",
+          "Responsible",
+          "Rule-abiding"
+        ],
+        "weaknesses": [
+          "Overly rigid",
+          "Impatient",
+          "Emotionally insensitive",
+          "Controlling"
+        ],
+        "careers": [
+          "Executive",
+          "Military Officer",
+          "Judge",
+          "Bank Manager",
+          "Government Administrator"
+        ],
+        "workplace": "Hierarchical organizations with clear structure that value efficiency and defined rules.",
+        "relationships": "Values commitment and loyalty, expects partners to respect tradition and responsibility.",
+        "aiAnalysis": {
+          "insights": [
+            "Your organizational and management skills make you excel in leadership positions.",
+            "Respect for rules and tradition helps maintain social order.",
+            "Practical and decisive style makes complex problems clear and solvable."
+          ],
+          "recommendations": [
+            "Develop sensitivity to others' emotional needs.",
+            "Learn to listen to different perspectives and suggestions.",
+            "Maintain flexibility while upholding principles."
+          ]
+        }
+      },
+      "ESFJ": {
+        "title": "Consul",
+        "description": "Warm and friendly coordinators who excel at maintaining harmony and caring about community and others.",
+        "strengths": [
+          "Sociable",
+          "Helpful",
+          "Responsible",
+          "Good at coordinating"
+        ],
+        "weaknesses": [
+          "Overly concerned with others' opinions",
+          "Conflict-avoidant",
+          "Difficulty saying no",
+          "Overly traditional"
+        ],
+        "careers": [
+          "HR Manager",
+          "Sales Manager",
+          "Event Planner",
+          "Nurse",
+          "Teacher"
+        ],
+        "workplace": "Harmonious and friendly environments with team spirit where they can interact and help others.",
+        "relationships": "Warm and considerate, family-oriented, needs mutually supportive and appreciative partners.",
+        "aiAnalysis": {
+          "insights": [
+            "Your social skills and coordination talent make you the glue of groups.",
+            "Care and support for others creates a warm interpersonal environment.",
+            "Strong sense of responsibility makes others feel secure and trusted."
+          ],
+          "recommendations": [
+            "Learn not to be overly concerned with others' judgments.",
+            "Develop independent thinking and decision-making abilities.",
+            "Take care of yourself while helping others."
+          ]
+        }
+      },
+      "ISTP": {
+        "title": "Virtuoso",
+        "description": "Calm and rational practitioners who excel at analyzing problems and finding efficient solutions.",
+        "strengths": [
+          "Hands-on",
+          "Logical",
+          "Calm",
+          "Adaptable"
+        ],
+        "weaknesses": [
+          "Emotionally distant",
+          "Easily bored",
+          "Poor expression",
+          "Risk-taking"
+        ],
+        "careers": [
+          "Engineer",
+          "Mechanic",
+          "Programmer",
+          "Pilot",
+          "Forensic Scientist"
+        ],
+        "workplace": "Environments offering hands-on opportunities with challenging tasks that value skills.",
+        "relationships": "Independent and free, needs partners who respect personal space and understand their independence.",
+        "aiAnalysis": {
+          "insights": [
+            "Your hands-on ability and logical analysis make you excel in technical fields.",
+            "Calm and objective attitude helps you make rational decisions.",
+            "Strong adaptability allows you to quickly master new skills."
+          ],
+          "recommendations": [
+            "Develop long-term persistence and avoid frequently changing interests.",
+            "Learn to express emotions to improve intimate relationships.",
+            "Maintain safety boundaries while pursuing excitement."
+          ]
+        }
+      },
+      "ISFP": {
+        "title": "Adventurer",
+        "description": "Sensitive artistic souls who pursue beauty and harmony, enjoying life as living artists.",
+        "strengths": [
+          "Artistic",
+          "Gentle",
+          "Flexible",
+          "Aesthetic"
+        ],
+        "weaknesses": [
+          "Overly sensitive",
+          "Poor planning",
+          "Conflict-avoidant",
+          "Lacks confidence"
+        ],
+        "careers": [
+          "Artist",
+          "Designer",
+          "Musician",
+          "Chef",
+          "Photographer"
+        ],
+        "workplace": "Flexible environments that allow creative expression and value personal expression.",
+        "relationships": "Gentle and romantic, pursues spiritual connection, needs partners who understand and support their artistic pursuits.",
+        "aiAnalysis": {
+          "insights": [
+            "Your artistic talent and unique aesthetics bring beautiful experiences to the world.",
+            "Sensitivity to the present allows you to enjoy life's beauty.",
+            "Gentle and friendly nature makes you a promoter of harmony."
+          ],
+          "recommendations": [
+            "Learn long-term planning and goal setting.",
+            "Build confidence and believe in your worth.",
+            "Face conflicts moderately and learn healthy expression."
+          ]
+        }
+      },
+      "ESTP": {
+        "title": "Entrepreneur",
+        "description": "Dynamic action-takers who excel at seizing opportunities and enjoying the present as adventurers.",
+        "strengths": [
+          "Action-oriented",
+          "Adaptable",
+          "Sociable",
+          "Practical"
+        ],
+        "weaknesses": [
+          "Impatient",
+          "Impulsive",
+          "Poor planning",
+          "Responsibility-avoidant"
+        ],
+        "careers": [
+          "Sales",
+          "Entrepreneur",
+          "Sports Coach",
+          "Paramedic",
+          "Negotiator"
+        ],
+        "workplace": "Energetic environments with challenges that value results and practical action.",
+        "relationships": "Direct and passionate, loves adventure and excitement, needs partners who can keep up with their pace.",
+        "aiAnalysis": {
+          "insights": [
+            "Your action orientation and adventurous spirit help you thrive in business.",
+            "Ability to seize opportunities allows you to always discover new possibilities.",
+            "Social charm enables you to easily build connections."
+          ],
+          "recommendations": [
+            "Develop patience and long-term planning abilities.",
+            "Learn to consider consequences of actions.",
+            "Maintain responsibility while pursuing excitement."
+          ]
+        }
+      },
+      "ESFP": {
+        "title": "Entertainer",
+        "description": "Enthusiastic entertainers who excel at creating atmosphere and enjoying every moment of life.",
+        "strengths": [
+          "Enthusiastic",
+          "Sociable",
+          "Adaptable",
+          "Charismatic"
+        ],
+        "weaknesses": [
+          "Difficulty focusing",
+          "Avoids seriousness",
+          "Easily distracted",
+          "Emotional"
+        ],
+        "careers": [
+          "Actor",
+          "Host",
+          "PR",
+          "Event Planner",
+          "Travel Consultant"
+        ],
+        "workplace": "Fun environments with social opportunities that allow free expression and creativity.",
+        "relationships": "Passionate and romantic, loves surprises, needs partners who can enjoy life together.",
+        "aiAnalysis": {
+          "insights": [
+            "Your enthusiasm and charm make you the center of attention.",
+            "Ability to create atmosphere makes others feel happy.",
+            "Love of life is infectious to everyone around you."
+          ],
+          "recommendations": [
+            "Develop focus and task completion abilities.",
+            "Learn to face and handle serious issues.",
+            "Maintain balance while pursuing fun."
+          ]
+        }
       }
     }
   },

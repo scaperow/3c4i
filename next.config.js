@@ -11,6 +11,10 @@ const nextConfig = {
     AUTH0_CLIENT_ID: process.env.AUTH0_CLIENT_ID,
     AUTH0_CLIENT_SECRET: process.env.AUTH0_CLIENT_SECRET,
     AUTH0_ISSUER: process.env.AUTH0_ISSUER,
+    // Version info - will be injected by deploy script
+    NEXT_PUBLIC_APP_VERSION: process.env.NEXT_PUBLIC_APP_VERSION || 'dev',
+    NEXT_PUBLIC_BUILD_TIME: process.env.NEXT_PUBLIC_BUILD_TIME || new Date().toISOString(),
+    NEXT_PUBLIC_GIT_COMMIT: process.env.NEXT_PUBLIC_GIT_COMMIT || 'unknown',
   },
   // Disable features that don't work well on Workers
   distDir: '.next',

@@ -464,7 +464,13 @@ function MBTIForm({
                 </NeoButton>
                 <NeoButton
                   onClick={() => {
-                    router.push('/mbti/result')
+                    // Pass result data in URL to ensure result page can load it
+                    if (testResultData) {
+                      const encodedResult = encodeURIComponent(testResultData)
+                      router.push(`/mbti/result?result=${encodedResult}`)
+                    } else {
+                      router.push('/mbti/result')
+                    }
                   }}
                   themeColor={themeColor}
                   className="px-8 py-2 font-medium"

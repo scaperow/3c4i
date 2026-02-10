@@ -3,13 +3,13 @@
   "target": "preview",
   "argv": [
     "/Users/scaperow/.asdf/installs/nodejs/22.14.0/bin/node",
-    "/Users/scaperow/.npm/_npx/69f9afb961c37556/node_modules/.bin/vc",
+    "/Users/scaperow/workspace/aibazi/node_modules/.bin/vercel",
     "build"
   ],
   "builds": [
     {
       "require": "@vercel/next",
-      "requirePath": "/Users/scaperow/.npm/_npx/69f9afb961c37556/node_modules/@vercel/next/dist/index",
+      "requirePath": "/Users/scaperow/workspace/aibazi/node_modules/@vercel/next/dist/index",
       "apiVersion": 2,
       "src": "package.json",
       "use": "@vercel/next",

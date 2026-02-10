@@ -11,6 +11,7 @@ out/
 build/
 dist/
 deploy_versions/
+.vercel/
 
 # Runtime data
 pids

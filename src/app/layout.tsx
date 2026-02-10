@@ -3,6 +3,7 @@ import { MantineProvider } from '@mantine/core'
 import { ColorSchemeScript } from '@mantine/core'
 import './globals.css'
 import ClientPageLoader from '@/components/ClientPageLoader'
+import { VersionDisplay } from '@/components/VersionDisplay'
 
 export const metadata = {
   title: '3C4I Portal | Intelligent Destiny Matrix',
@@ -29,6 +30,7 @@ export default function RootLayout({
         <MantineProvider>
           <ClientPageLoader />
           {children}
+          <VersionDisplay />
         </MantineProvider>
       </body>
     </html>
