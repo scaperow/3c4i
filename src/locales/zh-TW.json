@@ -1,0 +1,951 @@
+{
+  "common": {
+    "start": "開始旅程",
+    "calculating": "計算中...",
+    "datePicker": {
+      "placeholder": "選擇日期"
+    },
+    "loading": "加載中...",
+    "logoText": "易",
+    "logo": {
+      "default": "三"
+    },
+    "retry": "重試",
+    "restart": "重新開始",
+    "restartConfirm": "確定要重新開始嗎？這將清除當前進度。",
+    "back": "返回",
+    "prev": "上一題",
+    "next": "下一題",
+    "submit": "提交",
+    "male": "男",
+    "female": "女",
+    "boy": "男孩",
+    "girl": "女孩",
+    "defaultSurname": "李",
+    "defaultUser": "用戶",
+    "footerText": "© 2024 3C4I Portal. 版權所有。",
+    "separator": {
+      "dot": ".",
+      "middleDot": "·"
+    },
+    "format": {
+      "timeRange": "{{start}}:00 - {{end}}:59"
+    },
+    "unit": {
+      "yearSuffix": "年",
+      "monthSuffix": "月",
+      "daySuffix": "日",
+      "hourSuffix": "時"
+    },
+    "nav": {
+      "home": "首頁",
+      "history": "歷史",
+      "me": "我的",
+      "apps": "應用",
+      "methodology": "方法論",
+      "about": "關於",
+      "bazi": "智能八字",
+      "mbti": "MBTI測試",
+      "ainame": "AI起名"
+    },
+    "explore": "探索",
+    "coreForce": "核心原力",
+    "processing": "處理中...",
+    "generatedBy": "AI智能起名生成",
+    "unknownError": "未知錯誤",
+    "tip": "提示",
+    "close": "關閉",
+    "brandName": "3C4I 門戶",
+    "systemVer": "系統版本",
+    "footer": {
+      "applications": "應用",
+      "smartBazi": "智能八字",
+      "aiNaming": "AI 起名",
+      "mbtiTest": "MBTI 測試",
+      "about": "關於",
+      "methodology": "方法論",
+      "privacy": "隱私政策",
+      "rights": "版權所有。",
+      "exploreDestiny": "三元核心 × 智能\n通過數據探索命運。"
+    }
+  },
+  "landing": {
+    "background": {
+      "heaven": "天",
+      "earth": "地",
+      "humanity": "人"
+    },
+    "title": "三元核心",
+    "subtitle": "融合古老智慧與現代科學，解鎖你的潛能。",
+    "secure": "安全 & 私密計算",
+    "hero": {
+      "init": ":: 3C4I.SYSTEM.INIT()",
+      "three": "三",
+      "forces": "原力",
+      "sancai": "三才之道 · 人生之智",
+      "seal": "才",
+      "coupletLeft": "萬物負陰而抱陽",
+      "coupletRight": "沖氣以為和",
+      "heavenEarthHumanity": "Heaven · Earth · Humanity",
+      "desc": "融合 <0>東方玄學</0> 與 <1>人工神經網絡</1>。\n在混沌的數據中尋找秩序，用算法解析命運的底層邏輯。"
+    },
+    "stats": {
+      "apps": "APPS AVAILABLE",
+      "status": "系統狀態",
+      "statusValue": "運行中",
+      "appsValue": "03",
+      "userBaseValue": "12,408",
+      "versionValue": "2.1.0"
+    },
+    "portal": {
+      "title": "Portal Access",
+      "selectApp": "// SELECT.APPLICATION_MODULE"
+    },
+    "apps": {
+      "bazi": {
+        "title": "智能八字",
+        "seal": "命",
+        "resultSeal": "運",
+        "desc": "智能八字排盤與運勢解析。洞察先天能量結構，把握時機起伏。"
+      },
+      "naming": {
+        "concept": "EARTH",
+        "conceptCn": "地利",
+        "title": "AI Naming",
+        "desc": "基於五行互補與音韻美學的智能起名。賦予生命最完美的符號定義。"
+      },
+      "mbti": {
+        "concept": "HUMANITY",
+        "conceptCn": "人和",
+        "title": "MBTI Test",
+        "desc": "深度性格心理測試與職業生涯規劃。認知自我，覺醒潛能。"
+      }
+    },
+    "methodology": {
+      "title": "3C × 4I",
+      "subtitle": "Three Core Forces × Intelligence",
+      "forces": {
+        "title": "三才之道 (Three Forces)",
+        "seal": "才",
+        "heaven": {
+          "title": "C1 · 天",
+          "concept": "TIME",
+          "desc": "出生時間與命理結構"
+        },
+        "earth": {
+          "title": "C2 · 地",
+          "concept": "NATURE",
+          "desc": "性格、環境與基礎條件"
+        },
+        "humanity": {
+          "title": "C3 · 人",
+          "concept": "SELF",
+          "desc": "意識、選擇與成長路徑"
+        }
+      },
+      "intelligence": {
+        "title": "人生之智 (Intelligence)",
+        "seal": "智",
+        "insight": {
+          "title": "Insight",
+          "desc": "洞察你的性格與天賦"
+        },
+        "interpretation": {
+          "title": "Interpretation",
+          "desc": "解釋命運結構，而非迷信"
+        },
+        "identity": {
+          "title": "Identity",
+          "desc": "構建名字與身份認同"
+        },
+        "ai": {
+          "title": "Intelligence",
+          "desc": "AI 驅動的人生模型"
+        }
+      }
+    },
+    "features": {
+      "title": "System Capabilities",
+      "scan": "// SYSTEM.FEATURES.SCAN()",
+      "lunisolar": {
+        "title": "Lunisolar Engine",
+        "desc": "基於天文星曆的毫秒級排盤系統。精準計算真太陽時，還原最真實的能量刻度。"
+      },
+      "neural": {
+        "title": "Neural Interpret",
+        "desc": "LLM 驅動的白話文解讀，將命理邏輯轉化為現代決策建議，拒絕模稜兩可。"
+      },
+      "crossDomain": {
+        "title": "Cross-Domain",
+        "desc": "打通命理、姓名學與心理學數據，提供全維度的生命策略分析。"
+      }
+    },
+    "bazi": {
+      "calculate": {
+        "title": "智能<0>八字</0>排盤",
+        "subtitle": "輸入您的出生信息，使用結合傳統命理邏輯與 AI 解讀的系統解析您的命運矩陣。",
+        "form": {
+          "name": "姓名",
+          "namePlaceholder": "請輸入您的姓名",
+          "gender": "性別",
+          "male": "男 (乾造)",
+          "female": "女 (坤造)",
+          "birthDate": "出生日期 (公曆)",
+          "year": "年",
+          "month": "月",
+          "day": "日",
+          "birthTime": "出生時辰",
+          "submit": "開始排盤",
+          "alertName": "請填寫姓名"
+        }
+      },
+      "landing": {
+        "subtitle": "SMART.BAZI.CALCULATION",
+        "heroTitle": "知命<br /><0>順勢</0>",
+        "heroDesc": "探究先天命局，洞察後天運勢。\nAI 賦能傳統八字，為你指引人生方向。\n八字排盤 · 大運流年 · 趨吉避凶",
+        "calculateNow": "立即排盤",
+        "coreFeatures": "核心功能",
+        "features": {
+          "chart": {
+            "title": "八字排盤",
+            "desc": "精準計算年月日時，四柱八字完整解析，還原古法命理精髓。"
+          },
+          "luck": {
+            "title": "大運流年",
+            "desc": "十年大運走勢，流年流月詳細推演，把握人生起伏時機。"
+          },
+          "ai": {
+            "title": "AI 智能解析",
+            "desc": "結合傳統命理與現代 AI 算法，提供客觀、詳盡的個性化命理報告。"
+          }
+        }
+      },
+      "title": "命運矩陣",
+      "desc": "通過四柱命理，解讀你的人生藍圖。"
+    },
+    "mbti": {
+      "title": "MBTI 矩陣",
+      "desc": "了解你的心理偏好與認知功能。"
+    },
+    "naming": {
+      "title": "AI 起名",
+      "desc": "基於音韻與語義分析，打造完美名字。"
+    }
+  },
+  "bazi": {
+    "calculate": {
+      "title": "智能<0>八字</0>排盤",
+      "subtitle": "輸入您的出生信息，使用結合傳統命理邏輯與 AI 解讀的系統解析您的命運矩陣。",
+      "form": {
+        "name": "姓名",
+        "namePlaceholder": "請輸入您的姓名",
+        "gender": "性別",
+        "male": "男 (乾造)",
+        "female": "女 (坤造)",
+        "birthDate": "出生日期 (公曆)",
+        "year": "年",
+        "month": "月",
+        "day": "日",
+        "birthTime": "出生時辰",
+        "submit": "開始排盤",
+        "alertName": "請填寫姓名"
+      }
+    },
+    "landing": {
+      "subtitle": "SMART.BAZI.CALCULATION",
+      "heroTitle": "知命<br /><0>順勢</0>",
+      "heroDesc": "探究先天命局，洞察後天運勢。\nAI 賦能傳統八字，為你指引人生方向。\n八字排盤 · 大運流年 · 趨吉避凶",
+      "calculateNow": "立即排盤",
+      "coreFeatures": "核心功能",
+      "features": {
+        "chart": {
+          "title": "八字排盤",
+          "desc": "精準計算年月日時，四柱八字完整解析，還原古法命理精髓。"
+        },
+        "luck": {
+          "title": "大運流年",
+          "desc": "十年大運走勢，流年流月詳細推演，把握人生起伏時機。"
+        },
+        "ai": {
+          "title": "AI 智能解析",
+          "desc": "結合傳統命理與現代 AI 算法，提供客觀、詳盡的個性化命理報告。"
+        }
+      }
+    },
+    "title": "命運矩陣",
+    "seal": "命",
+    "resultSeal": "運",
+    "resultTitle": "命運矩陣",
+    "resultTitleStyled": "命運<0>矩陣</0>",
+    "analysisFor": "{{name}} 的分析",
+    "pillars": {
+      "year": "年柱",
+      "month": "月柱",
+      "day": "日柱",
+      "hour": "時柱",
+      "header": "四柱"
+    },
+    "year": "年柱",
+    "month": "月柱",
+    "day": "日柱",
+    "hour": "時柱",
+    "mainStar": "主星",
+    "tiangan": "天干",
+    "dizhi": "地支",
+    "hiddenStems": "藏干",
+    "nayin": "納音",
+    "xingyun": "星運",
+    "shensha": "神煞",
+    "coreAnalysis": "核心分析",
+    "fiveElements": "五行結構",
+    "timeline": "命運時間軸",
+    "timelineSubtitle": "大運 · 流年 · 流月 · 流日 · 流時",
+    "timelineHeaders": {
+      "tenYear": "大運",
+      "yearly": "流年",
+      "monthly": "流月",
+      "daily": "流日",
+      "hourly": "流時"
+    },
+    "timelineUnits": {
+      "luck": "運",
+      "age": "歲"
+    },
+    "aiInterpretation": "AI 解讀",
+    "aiSubtitle": "基於經典算法的深度人生洞察",
+    "careerWealth": "事業財運",
+    "relationships": "感情婚姻",
+    "health": "健康建議",
+    "currentYear": "流年運勢",
+    "newCalculation": "開始新測算",
+    "calculatingText": "正在計算命運矩陣...",
+    "voidBadge": "空亡",
+    "terms": {
+      "tiangan": {
+        "jia": "甲",
+        "yi": "乙",
+        "bing": "丙",
+        "ding": "丁",
+        "wu": "戊",
+        "ji": "己",
+        "geng": "庚",
+        "xin": "辛",
+        "ren": "壬",
+        "gui": "癸"
+      },
+      "dizhi": {
+        "zi": "子",
+        "chou": "丑",
+        "yin": "寅",
+        "mao": "卯",
+        "chen": "辰",
+        "si": "巳",
+        "wu_fire": "午",
+        "wei": "未",
+        "shen": "申",
+        "you": "酉",
+        "xu": "戌",
+        "hai": "亥"
+      },
+      "wuxing": {
+        "wood": "木",
+        "fire": "火",
+        "earth": "土",
+        "metal": "金",
+        "water": "水",
+        "unknown": "未知"
+      },
+      "shishen": {
+        "zheng_yin": "正印",
+        "pian_yin": "偏印",
+        "zheng_guan": "正官",
+        "qi_sha": "七殺",
+        "zheng_cai": "正財",
+        "pian_cai": "偏財",
+        "shang_guan": "傷官",
+        "shi_shen": "食神",
+        "bi_jian": "比肩",
+        "jie_cai": "劫財",
+        "unknown": "未知",
+        "day_master": "日主"
+      },
+      "zhangsheng": {
+        "chang_sheng": "長生",
+        "mu_yu": "沐浴",
+        "guan_dai": "冠帶",
+        "lin_guan": "臨官",
+        "di_wang": "帝旺",
+        "shuai": "衰",
+        "bing": "病",
+        "si": "死",
+        "mu": "墓",
+        "jue": "絕",
+        "tai": "胎",
+        "yang": "養",
+        "unknown": "未知"
+      },
+      "shensha": {
+        "tian_yi_gui_ren": "天乙貴人",
+        "tao_hua": "桃花",
+        "yi_ma": "驛馬",
+        "wen_chang": "文昌",
+        "xu_hai": "空亡 (戌亥)",
+        "shen_you": "空亡 (申酉)",
+        "wu_wei": "空亡 (午未)",
+        "chen_si": "空亡 (辰巳)",
+        "yin_mao": "空亡 (寅卯)",
+        "zi_chou": "空亡 (子丑)",
+        "unknown": "未知"
+      },
+      "jieqi": {
+        "立春": "立春",
+        "雨水": "雨水",
+        "惊蛰": "驚蟄",
+        "春分": "春分",
+        "清明": "清明",
+        "谷雨": "穀雨",
+        "立夏": "立夏",
+        "小满": "小滿",
+        "芒种": "芒種",
+        "夏至": "夏至",
+        "小暑": "小暑",
+        "大暑": "大暑",
+        "立秋": "立秋",
+        "处暑": "處暑",
+        "白露": "白露",
+        "秋分": "秋分",
+        "寒露": "寒露",
+        "霜降": "霜降",
+        "立冬": "立冬",
+        "小雪": "小雪",
+        "大雪": "大雪",
+        "冬至": "冬至",
+        "小寒": "小寒",
+        "大寒": "大寒"
+      },
+
+      "nayin": {
+        "hai_zhong_jin": "海中金",
+        "lu_zhong_huo": "爐中火",
+        "da_lin_mu": "大林木",
+        "lu_pang_tu": "路旁土",
+        "jian_feng_jin": "劍鋒金",
+        "shan_tou_huo": "山頭火",
+        "jian_xia_shui": "澗下水",
+        "cheng_tou_tu": "城頭土",
+        "bai_la_jin": "白蠟金",
+        "yang_liu_mu": "楊柳木",
+        "quan_zhong_shui": "泉中水",
+        "wu_shang_tu": "屋上土",
+        "pi_li_huo": "霹靂火",
+        "song_bai_mu": "松柏木",
+        "chang_liu_shui": "長流水",
+        "sha_zhong_jin": "沙中金",
+        "shan_xia_huo": "山下火",
+        "ping_di_mu": "平地木",
+        "bi_shang_tu": "壁上土",
+        "jin_bo_jin": "金箔金",
+        "fu_deng_huo": "覆燈火",
+        "tian_he_shui": "天河水",
+        "da_yi_tu": "大驛土",
+        "chai_chuan_jin": "釵釧金",
+        "sang_zhe_mu": "桑柘木",
+        "da_xi_shui": "大溪水",
+        "sha_zhong_tu": "沙中土",
+        "tian_shang_huo": "天上火",
+        "shi_liu_mu": "石榴木",
+        "da_hai_shui": "大海水",
+        "unknown": "未知"
+      }
+    },
+    "analysis": {
+      "mingju": {
+        "wuxingTrait": {
+          "wood": "木主仁慈，有領導才能，適合從事教育、文化、藝術等行業。",
+          "fire": "火主禮讓，有表達能力，適合從事銷售、公關、演藝等行業。",
+          "earth": "土主誠信，有管理才能，適合從事管理、行政、房地產等行業。",
+          "metal": "金主義氣，有決斷能力，適合從事金融、法律、技術等行業。",
+          "water": "水主智慧，有應變能力，適合從事咨詢、貿易、旅遊等行業。"
+        }
+      },
+      "wuxing": {
+        "balance": {
+          "self_strong": "身旺財旺，得時得勢。",
+          "month_support": "月柱幫扶，得月助身。",
+          "year_support": "年柱生助，得年助身。"
+        },
+        "interaction": {
+          "generating": "木火相生，火土相生，相生為吉。",
+          "clashing": "金木相剋，木土相剋，相剋為凶。"
+        }
+      },
+      "shishen": {
+        "pattern": {
+          "official_exposed": "正官透出，事業有成。",
+          "wealth_stored": "正財入庫，財運亨通。",
+          "rob_wealth_seated": "劫財坐實，需防破財。"
+        }
+      },
+      "career": {
+        "management": "有管理才能，適合從事管理、領導崗位。",
+        "business": "有商業頭腦，適合從事商業、金融、投資。",
+        "tech": "有技術專長，適合從事技術、研發、專業服務。"
+      },
+      "marriage": {
+        "spouse": "配偶屬{{zodiac}}",
+        "stability": {
+          "stable": "感情專一，婚姻穩定。",
+          "turbulent": "感情多波折，需多包容理解。",
+          "neutral": "感情運勢平穩。"
+        }
+      },
+      "health": {
+        "wood": "木主肝膽，需注意肝膽養護。適宜運動：散步、太極、瑜伽。",
+        "fire": "火主心腦，需注意心血管健康。適宜運動：游泳、快走、太極。",
+        "earth": "土主脾胃，需注意消化系統。適宜運動：散步、瑜伽、太極。",
+        "metal": "金主肺腑，需注意呼吸系統。適宜運動：游泳、慢跑、太極。",
+        "water": "水主腎臟，需注意泌尿系統。適宜運動：游泳、瑜伽、太極。"
+      }
+    }
+  },
+  "ainame": {
+    "hero": {
+      "title1": "賜子",
+      "title2": "千金",
+      "desc": "名字是送給孩子的第一份禮物。\nAI 融合詩詞典故與五行八字，\n定制專屬吉祥好名。",
+      "seal": "名",
+      "subtitle": "AI.NAMING.SYSTEM"
+    },
+    "form": {
+      "title": "立即起名",
+      "surname": "姓氏 (Surname)",
+      "placeholder": "請輸入姓氏",
+      "submit": "立即生成",
+      "surname_required": "請輸入姓氏",
+      "gender": {
+        "boy": "男孩",
+        "girl": "女孩"
+      }
+    },
+    "structure": {
+      "surname": "姓氏",
+      "given_name": "名字",
+      "add": "添加",
+      "current_length": "當前名字長度：{{length}}",
+      "hint": {
+        "fixed": "點擊空白方塊可設定定字（如輩分字）",
+        "surname": "點擊修改姓氏"
+      }
+    },
+    "features": {
+      "recommend": {
+        "title": "智能推薦",
+        "desc": "基於 AI 深度學習，結合傳統姓名學理論，為您推薦既好聽又有內涵的名字。"
+      },
+      "culture": {
+        "title": "文化底蘊",
+        "desc": "融合詩詞典故、成語寓意，賦予名字深厚的中華文化底蘊。"
+      },
+      "balance": {
+        "title": "五行平衡",
+        "desc": "根據生辰八字分析五行強弱，通過名字補全缺失，追求五行平衡。"
+      }
+    },
+    "result": {
+      "scoreSuffix": "分",
+      "aiGenerated": "AI 生成",
+      "sealLuck": "運",
+      "title": "您的專屬\n吉祥好名",
+      "subtitle": "基於 {{surname}} 氏家族譜系與{{gender}}八字命理分析",
+      "regenerate": "重新生成",
+      "save": "保存結果",
+      "fav": "收藏",
+      "favorited": "已收藏",
+      "myFavorites": "我的收藏",
+      "saveImage": "保存圖片",
+      "savePdf": "保存PDF",
+      "details": "詳情",
+      "detailsTitle": "{{name}} 的名字詳解",
+      "clearedFavorites": "已清空收藏",
+      "pdfTitle": "AI 起名推薦",
+      "pdfSubtitle": "為「{{surname}}」姓寶寶精選名字",
+      "imageSaved": "圖片已保存",
+      "imageSaveFailed": "保存圖片失敗",
+      "pdfSaved": "PDF已保存",
+      "pdfSaveFailed": "保存PDF失敗",
+      "boyBaby": "男寶寶",
+      "girlBaby": "女寶寶",
+      "countNames": "共 {{count}} 個名字",
+      "analysisTitle": "命理分析",
+      "meaningAnalysis": "含義解析",
+      "origin": "出處",
+      "aiGeneratedResults": "AI 智能生成結果",
+      "destinyAnalysis": "命理分析",
+      "examplePrefix": "例：",
+      "tabs": {
+        "surname": "姓氏解析",
+        "bazi": "八字分析",
+        "wuxing": "五行分布",
+        "advice": "起名建議"
+      },
+      "recommendedNames": "推薦名字",
+      "unsatisfied": "不滿意以上名字？",
+      "regenerateBatch": "重新生成 12 個新名字",
+      "pleaseFavorite": "請先收藏一些名字",
+      "viewFavorites": "查看收藏",
+      "tip": "提示",
+      "config": {
+        "title": "調整配置",
+        "style": "名字風格",
+        "balance": "五行調和 (基於生辰八字)",
+        "birth_date": "出生日期",
+        "birth_time": "出生時間",
+        "other": "其他要求",
+        "placeholder_other": "例如：避開某些字，或者希望包含某種寓意...",
+        "balance_options": {
+          "auto": "智能自動",
+          "metal": "補金",
+          "wood": "補木",
+          "water": "補水",
+          "fire": "補火",
+          "earth": "補土"
+        }
+      },
+      "mock": {
+        "name1": {
+          "suffix": "浩然",
+          "meaning": "浩然正氣，胸懷廣闊。"
+        },
+        "name2": {
+          "suffix": "宇軒",
+          "meaning": "氣宇軒昂，風度翩翩。"
+        },
+        "name3": {
+          "suffix": "子墨",
+          "meaning": "文采斐然，墨香世家。"
+        },
+        "name4": {
+          "suffix": "梓涵",
+          "meaning": "像梓樹一樣茁壯成長，有涵養。"
+        },
+        "name5": {
+          "suffix": "思睿",
+          "meaning": "才思敏捷，聰慧睿智。"
+        },
+        "name6": {
+          "suffix": "若虛",
+          "meaning": "虛懷若谷，大智若愚。"
+        }
+      }
+    },
+    "styles": {
+      "literary": "文藝風",
+      "chinese": "中國風",
+      "minimalist": "簡約風",
+      "modern": "現代風",
+      "nature": "自然風"
+    },
+    "types": {
+      "graceful": "婉約型",
+      "bold": "豪氣型",
+      "smart": "睿智型",
+      "gentle": "溫潤型",
+      "lively": "活潑型"
+    },
+    "examples": {
+      "literary": { "boy": "雲舒、墨言、清辭", "girl": "詩涵、若琳、夢瑠" },
+      "chinese": { "boy": "承熙、禮賢、德潤", "girl": "婉儀、淑慧、嘉懿" },
+      "minimalist": { "boy": "一帆、子軒、明哲", "girl": "心悅、思琦、雨晴" },
+      "modern": { "boy": "晨曦、逸飛、澤宇", "girl": "語嬣、欣妍、芷若" },
+      "nature": { "boy": "林風、泉聲、岳峰", "girl": "溪雲、雪晴、芷蘭" }
+    },
+    "form": {
+      "gender": {
+        "title": "性別 (Gender)",
+        "boy": "男孩",
+        "girl": "女孩"
+      },
+      "step1": "基本信息",
+      "step2": "風格偏好",
+      "step3": "性格期望",
+      "birthDate": "出生日期",
+      "birthTime": "出生時辰",
+      "specificChar": "定字 (可選)",
+      "placeholder_specificChar": "如：輩分字或喜歡的字",
+      "style": "風格",
+      "type": "類型",
+      "next": "下一步",
+      "prev": "上一步"
+    }
+  },
+  "mbti": {
+    "test": {
+      "error": "無法加載題目"
+    },
+    "hero": {
+      "cta": "開始測試",
+      "seal": "心",
+      "subtitle": "MBTI.CHARACTER.ANALYSIS",
+      "title1": "洞見",
+      "title2": "真我",
+      "desc": "融合榮格心理學與現代 AI 技術，\n探索你潛意識深處的性格密碼。\n科學性格分析 · 深度自我認知 · 职業發展指導"
+    },
+    "testMode": {
+      "title": "選擇測試模式",
+      "quick": "快速測試",
+      "quickDesc": "7個問題，3分鐘快速了解",
+      "full": "完整測試",
+      "fullDesc": "88個問題，20分鐘深度分析",
+      "testCompleted": "測試完成",
+      "testCompletedDesc": "恭喜你完成了所有題目！點擊下方按鈕查看你的性格分析報告。"
+    },
+    "landing": {
+      "hero": {
+        "title1": "洞見",
+        "title2": "真我",
+        "desc": "融合榮格心理學與現代 AI 技術，\n探索你潛意識深處的性格密碼。\n科學性格分析 · 深度自我認知 · 職業發展指導",
+        "seal": "心",
+        "subtitle": "MBTI.CHARACTER.ANALYSIS",
+        "start": "開始測試"
+      },
+      "features": {
+        "title": "核心功能",
+        "subtitle": "// CORE.FEATURES",
+        "test": {
+          "title": "科學測試",
+          "desc": "基於榮格心理類型理論的權威測評體系，深度解析您的認知功能偏好。"
+        },
+        "ai": {
+          "title": "AI 深度分析",
+          "desc": "結合最新 AI 技術，生成超萬字的個性化性格分析報告，比你自己更懂你。"
+        },
+        "career": {
+          "title": "職業與情感",
+          "desc": "提供精準的職業發展建議與情感關係匹配指南，助力人生關鍵決策。"
+        }
+      }
+    },
+    "header": {
+      "protocol": "MBTI 協議",
+      "title": "性格評估",
+      "subtitle": "去中心化的人格分析 — 簡潔、嚴謹、隱私優先。"
+    },
+    "cover": "16 種類型 · 深度解析",
+    "quick": {
+      "title": "快速掃描",
+      "subtitle": "7 題",
+      "time": "2 分鐘",
+      "desc": "快速、低摩擦的評估，適合快速了解人格傾向。"
+    },
+    "full": {
+      "title": "深度分析",
+      "subtitle": "92 題",
+      "time": "12 分鐘",
+      "desc": "多維度、全面的人格畫像報告。"
+    },
+    "features": {
+      "scientific": "科學",
+      "instant": "即時",
+      "comprehensive": "全面",
+      "privacy": "隱私",
+      "sectionTitle": "核心功能",
+      "sectionSubtitle": "// CORE.FEATURES",
+      "scientific": {
+        "title": "科學測試",
+        "desc": "基於榮格心理類型理論的權威測評體系，深度解析您的認知功能偏好。"
+      },
+      "analysis": {
+        "title": "AI 深度分析",
+        "desc": "結合最新 AI 技術，生成超萬字的個性化性格分析報告，比你自己更懂你。"
+      },
+      "career": {
+        "title": "职業與情感",
+        "desc": "提供精準的职業發展建議與情感關係匹配指南，助力人生關鍵決策。"
+      }
+    },
+    "footer": {
+      "powered": "基於 Myers-Briggs",
+      "assessments": "測評次數",
+      "completed": "已完成"
+    },
+    "resultPage": {
+      "analyzing": "分析您的性格特徵...",
+      "error": {
+        "title": "無法加載測試結果",
+        "home": "返回首頁"
+      },
+      "back": "返回",
+      "share": "分享結果",
+      "retest": "重新測試",
+      "aiScore": "AI 匹配度",
+      "strengths": "性格優勢",
+      "recommendations": "發展建議",
+      "career": "職業發展",
+      "suitableCareers": "適合的職業：",
+      "workplace": "工作環境偏好：",
+      "aiInsights": "AI 深度洞察",
+      "relationships": "人際關係",
+      "shareText": "我的MBTI性格類型是 {{type}} - {{title}}！{{description}}",
+      "copySuccess": "結果已複製到剪貼板！",
+      "shareTitle": "分享成功",
+      "shareSuccess": "結果已複製到剪貼板"
+    },
+    "questions": [
+      {
+        "title": "1. 我在工作中最好的想法源自",
+        "selections": [
+          {
+            "text": "與他人交流想法並共同分享。",
+            "aiPrompt": "外向型(E)：通過與外界互動獲取能量和靈感，善於社交溝通，重視團隊協作，喜歡在討論中激發創意，適合需要人際交往的工作環境。"
+          },
+          {
+            "text": "自己安靜地思考。",
+            "aiPrompt": "內向型(I)：通過內在思考獲取能量和靈感，善於獨立工作，注重深度思考，喜歡安靜專注的環境，更適合需要集中注意力的工作。"
+          }
+        ]
+      },
+      {
+        "title": "2. 當我主持會議時，我通常",
+        "selections": [
+          {
+            "text": "嚴格按照預先準備的議程進行。",
+            "aiPrompt": "判斷型(J)：喜歡有計劃、有條理的工作方式，重視結構和秩序，傾向於按部就班地完成任務，適合需要強執行力和規劃能力的環境。"
+          },
+          {
+            "text": "允許討論偏離議題，只要有價值。",
+            "aiPrompt": "感知型(P)：喜歡靈活、開放的工作方式，適應性強，重視過程中的可能性，傾向於隨機應變，適合需要創新和靈活應對的環境。"
+          }
+        ]
+      },
+      {
+        "title": "3. 在解決問題時，我更傾向於",
+        "selections": [
+          {
+            "text": "依賴過去的經驗和經過驗證的方法。",
+            "aiPrompt": "感覺型(S)：注重事實和細節，依賴經驗和現實依據，喜歡務實、具體的解決方案，適合需要精確和務實的工作。"
+          },
+          {
+            "text": "尋找新的可能性和獨創的解決方案。",
+            "aiPrompt": "直覺型(N)：注重概念和整體圖景，依賴直覺和想像力，喜歡創新、抽象的解決方案，適合需要宏觀視野和創造力的工作。"
+          }
+        ]
+      },
+      {
+        "title": "4. 做決定時，我通常會",
+        "selections": [
+          {
+            "text": "基於邏輯分析和客觀事實。",
+            "aiPrompt": "思考型(T)：決策時注重邏輯、客觀標準和因果關係，傾向於理性分析，適合需要客觀判斷和邏輯推理的領域。"
+          },
+          {
+            "text": "考慮他人的感受和價值觀。",
+            "aiPrompt": "情感型(F)：決策時注重價值觀、和諧與人情，傾向於感性考量，適合需要同理心和人際協調的領域。"
+          }
+        ]
+      },
+      {
+        "title": "5. 我更喜歡的工作環境是",
+        "selections": [
+          {
+            "text": "充滿活力，能經常與人互動的。",
+            "aiPrompt": "外向型(E)：偏好熱鬧、互動頻繁的環境，能從人際交往中獲得動力。"
+          },
+          {
+            "text": "安靜私密，能專注做事的。",
+            "aiPrompt": "內向型(I)：偏好安靜、獨立的環境，能從獨處中恢復精力。"
+          }
+        ]
+      },
+      {
+        "title": "6. 對於最後期限，我通常",
+        "selections": [
+          {
+            "text": "提前完成，不喜歡最後一刻的壓力。",
+            "aiPrompt": "判斷型(J)：時間觀念強，喜歡提前規劃，避免壓力和不確定性。"
+          },
+          {
+            "text": "在最後期限前一刻效率最高。",
+            "aiPrompt": "感知型(P)：時間觀念靈活，喜歡在壓力下工作，享受最後衝刺的刺激。"
+          }
+        ]
+      },
+      {
+        "title": "7. 別人通常形容我",
+        "selections": [
+          {
+            "text": "腳踏實地，講究實際。",
+            "aiPrompt": "感覺型(S)：給人穩重、務實的印象，關注當下和現實。"
+          },
+          {
+            "text": "富有想像力，喜歡談論未來。",
+            "aiPrompt": "直覺型(N)：給人有遠見、創意的印象，關注未來和可能性。"
+          }
+        ]
+      }
+    ]
+  },
+  "admin": {
+    "title": "系統管理",
+    "subtitle": "AI Configuration Panel",
+    "reset": "重置",
+    "save": "保存配置",
+    "saved": "配置已保存",
+    "saveFailed": "保存失敗",
+    "resetConfirm": "確定要重置為預設配置嗎？",
+    "resetSuccess": "已重置為預設配置",
+    "testConnection": "測試連接",
+    "testing": "正在測試...",
+    "testSuccess": "測試成功",
+    "testFailed": "測試失敗",
+    "connecting": "連接中...",
+    "connectionSuccess": "連接成功 ({{latency}}ms)",
+    "connectionFailed": "連接失敗: ",
+    "errors": "配置錯誤",
+    "provider": {
+      "title": "AI Provider",
+      "dashscope": "阿里雲 DashScope",
+      "openai": "OpenAI",
+      "ollama": "Ollama (本地)",
+      "custom": "自定義",
+      "desc": {
+        "dashscope": "通義千問系列模型",
+        "openai": "GPT 系列模型",
+        "ollama": "本地運行的開源模型",
+        "custom": "自定義 OpenAI 兼容 API"
+      }
+    },
+    "api": {
+      "title": "API 配置",
+      "url": "API URL",
+      "key": "API Key",
+      "configured": "(已配置)",
+      "model": "模型",
+      "ollamaHost": "Ollama Host",
+      "placeholder": {
+        "key": "輸入 API Key",
+        "ollamaKey": "ollama (可選)",
+        "model": "模型名稱",
+        "selectPreset": "選擇預設..."
+      }
+    },
+    "params": {
+      "title": "模型參數",
+      "maxTokens": "最大Token數 (Max Tokens)",
+      "temperature": "溫度 (Temperature)",
+      "hint": {
+        "maxTokens": "100 - 128000",
+        "temperature": "0 - 2 (越高越隨機)"
+      }
+    },
+    "other": {
+      "title": "其他設置",
+      "debug": "啟用調試日誌",
+      "debugDesc": "記錄 AI 請求和回應詳情到控制台"
+    },
+    "connection": {
+      "title": "連接測試",
+      "desc": "發送測試請求以驗證 API 配置是否正確"
+    },
+    "lastUpdated": "最後更新"
+  }
+}

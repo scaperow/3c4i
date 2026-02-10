@@ -1,0 +1,1236 @@
+{
+  "common": {
+    "start": "Start Journey",
+    "calculating": "Calculating...",
+    "datePicker": {
+      "placeholder": "Select Date"
+    },
+    "loading": "Loading...",
+    "logoText": "Yi",
+    "logo": {
+      "default": "Three"
+    },
+    "retry": "Retry",
+    "restart": "Restart",
+    "restartConfirm": "Are you sure you want to restart? This will clear current progress.",
+    "back": "Back",
+    "prev": "Previous",
+    "next": "Next",
+    "submit": "Submit",
+    "male": "Male",
+    "female": "Female",
+    "boy": "Boy",
+    "girl": "Girl",
+    "defaultSurname": "Li",
+    "defaultUser": "User",
+    "footerText": "© 2024 3C4I Portal. All rights reserved.",
+    "separator": {
+      "dot": ".",
+      "middleDot": "·"
+    },
+    "format": {
+      "timeRange": "{{start}}:00 - {{end}}:59"
+    },
+    "unit": {
+      "yearSuffix": " Year",
+      "monthSuffix": "",
+      "daySuffix": "",
+      "hourSuffix": ""
+    },
+    "nav": {
+      "home": "Home",
+      "history": "History",
+      "me": "Me",
+      "apps": "Apps",
+      "methodology": "Methodology",
+      "about": "About",
+      "bazi": "Smart Bazi",
+      "mbti": "MBTI Test",
+      "ainame": "AI Naming"
+    },
+    "explore": "EXPLORE",
+    "coreForce": "Core Force",
+    "processing": "Processing...",
+    "generatedBy": "AI Smart Naming Generated",
+    "unknownError": "Unknown error",
+    "tip": "Tip",
+    "close": "Close",
+    "brandName": "3C4I Portal",
+    "systemVer": "SYSTEM VER.",
+    "footer": {
+      "applications": "Applications",
+      "smartBazi": "Smart Bazi",
+      "aiNaming": "AI Naming",
+      "mbtiTest": "MBTI Test",
+      "about": "About",
+      "methodology": "Methodology",
+      "privacy": "Privacy",
+      "rights": "ALL RIGHTS RESERVED.",
+      "exploreDestiny": "Three Core Forces × Intelligence\nExplore your destiny through data."
+    }
+  },
+  "landing": {
+    "background": {
+      "heaven": "Heaven",
+      "earth": "Earth",
+      "humanity": "Humanity"
+    },
+    "title": "Three Core Forces",
+    "subtitle": "Unlock your potential through ancient wisdom and modern science.",
+    "secure": "Secure & Private Computing",
+    "hero": {
+      "init": ":: 3C4I.SYSTEM.INIT()",
+      "three": "THREE",
+      "forces": "FORCES",
+      "sancai": "Three Forces · Wisdom of Life",
+      "seal": "Forces",
+      "coupletLeft": "All things carry Yin and embrace Yang",
+      "coupletRight": "Blending breaths to achieve harmony",
+      "heavenEarthHumanity": "Heaven · Earth · Humanity",
+      "desc": "Merging <0>Eastern Metaphysics</0> with <1>Neural Networks</1>.\nFinding order in chaotic data, decoding the underlying logic of destiny with algorithms."
+    },
+    "stats": {
+      "apps": "APPS AVAILABLE",
+      "status": "SYSTEM STATUS",
+      "statusValue": "OPERATIONAL",
+      "appsValue": "03",
+      "userBaseValue": "12,408",
+      "versionValue": "2.1.0",
+      "userBase": "USER BASE",
+      "version": "VERSION"
+    },
+    "portal": {
+      "title": "Portal Access",
+      "selectApp": "// SELECT.APPLICATION_MODULE"
+    },
+    "apps": {
+      "bazi": {
+        "concept": "HEAVEN",
+        "conceptCn": "Heaven",
+        "title": "Smart Bazi",
+        "seal": "Fate",
+        "resultSeal": "Luck",
+        "desc": "Intelligent Bazi calculation and destiny analysis. Insight into innate energy structure and timing."
+      },
+      "naming": {
+        "concept": "EARTH",
+        "conceptCn": "Earth",
+        "title": "AI Naming",
+        "desc": "Smart naming based on Five Elements and phonetic aesthetics. Defining life with the perfect symbol."
+      },
+      "mbti": {
+        "concept": "HUMANITY",
+        "conceptCn": "Humanity",
+        "title": "MBTI Test",
+        "desc": "Deep personality test and career planning. Know yourself, awaken potential."
+      }
+    },
+    "methodology": {
+      "title": "3C × 4I",
+      "subtitle": "Three Core Forces × Intelligence",
+      "forces": {
+        "title": "Three Forces",
+        "seal": "C",
+        "heaven": {
+          "title": "C1 · HEAVEN",
+          "concept": "TIME",
+          "desc": "Birth time and destiny structure"
+        },
+        "earth": {
+          "title": "C2 · EARTH",
+          "concept": "NATURE",
+          "desc": "Character, environment and foundation"
+        },
+        "humanity": {
+          "title": "C3 · HUMANITY",
+          "concept": "SELF",
+          "desc": "Consciousness, choice and growth path"
+        }
+      },
+      "intelligence": {
+        "title": "Intelligence",
+        "seal": "I",
+        "insight": {
+          "title": "Insight",
+          "desc": "Insight into your character and talent"
+        },
+        "interpretation": {
+          "title": "Interpretation",
+          "desc": "Explaining destiny structure, not superstition"
+        },
+        "identity": {
+          "title": "Identity",
+          "desc": "Building name and identity"
+        },
+        "ai": {
+          "title": "Intelligence",
+          "desc": "AI-driven life model"
+        }
+      }
+    },
+    "features": {
+      "title": "System Capabilities",
+      "scan": "// SYSTEM.FEATURES.SCAN()",
+      "lunisolar": {
+        "title": "Lunisolar Engine",
+        "desc": "Millisecond-level chart system based on astronomical ephemeris. Precise calculation of true solar time."
+      },
+      "neural": {
+        "title": "Neural Interpret",
+        "desc": "LLM-driven plain language interpretation, translating destiny logic into modern decision advice."
+      },
+      "crossDomain": {
+        "title": "Cross-Domain",
+        "desc": "Integrating destiny, naming, and psychology data for full-dimensional life strategy analysis."
+      }
+    },
+    "bazi": {
+      "title": "Bazi Destiny",
+      "seal": "Fate",
+      "resultSeal": "Luck",
+      "desc": "Decode your life's blueprint with the Four Pillars of Destiny."
+    },
+    "mbti": {
+      "title": "MBTI Matrix",
+      "desc": "Understand your psychological preferences and cognitive functions."
+    },
+    "naming": {
+      "title": "AI Naming",
+      "desc": "Craft the perfect name based on phonetic and semantic analysis."
+    }
+  },
+  "bazi": {
+    "seal": "Fate",
+    "resultSeal": "Luck",
+    "voidBadge": "Void",
+    "calculate": {
+      "title": "Smart <0>Bazi</0> Analysis",
+      "subtitle": "Input your birth data to decode your destiny matrix using traditional Bazi logic enhanced by AI interpretation.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Enter your name",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "birthDate": "Birth Date (Solar)",
+        "year": "Year",
+        "month": "Month",
+        "day": "Day",
+        "birthTime": "Birth Time",
+        "submit": "Start Analysis",
+        "alertName": "Please enter your name"
+      }
+    },
+    "landing": {
+      "subtitle": "SMART.BAZI.CALCULATION",
+      "heroTitle": "Know Destiny<br /><0>Follow Trend</0>",
+      "heroDesc": "Explore innate destiny, gain insight into future trends.\nAI empowers traditional Bazi to guide your life direction.\nBazi Chart · Luck Pillars · Auspiciousness",
+      "calculateNow": "Calculate Now",
+      "coreFeatures": "Core Features",
+      "features": {
+        "chart": {
+          "title": "Bazi Chart",
+          "desc": "Precise calculation of Year, Month, Day, Hour. Complete Four Pillars analysis restoring ancient wisdom."
+        },
+        "luck": {
+          "title": "Luck Pillars",
+          "desc": "Ten-year luck cycles and annual fortune analysis. Grasp life's ups and downs."
+        },
+        "ai": {
+          "title": "AI Analysis",
+          "desc": "Combining traditional metaphysics with modern AI algorithms for objective, detailed personalized reports."
+        }
+      }
+    },
+    "resultTitle": "Destiny Matrix",
+    "resultTitleStyled": "Destiny <0>Matrix</0>",
+    "analysisFor": "Analysis for {{name}}",
+    "pillars": "Pillars",
+    "year": "Year",
+    "month": "Month",
+    "day": "Day",
+    "hour": "Hour",
+    "mainStar": "Main Star",
+    "tiangan": "Heavenly Stems",
+    "dizhi": "Earthly Branches",
+    "hiddenStems": "Hidden Stems",
+    "nayin": "NaYin",
+    "xingyun": "Star Luck",
+    "shensha": "ShenSha",
+    "coreAnalysis": "Core Analysis",
+    "fiveElements": "Five Elements & Structure",
+    "timeline": "Interactive Fortune Timeline",
+    "timelineSubtitle": "Dayun · Liunian · Liuyue · Liuri · Liushi",
+    "timelineHeaders": {
+      "tenYear": "Ten-Year Luck",
+      "yearly": "Yearly Luck",
+      "monthly": "Monthly Luck",
+      "daily": "Daily Luck",
+      "hourly": "Hourly Luck"
+    },
+    "timelineUnits": {
+      "luck": " Luck",
+      "age": " Age"
+    },
+    "aiInterpretation": "AI Interpretation",
+    "aiSubtitle": "Deep insight into your life path based on classical calculation",
+    "careerWealth": "Career & Wealth",
+    "relationships": "Relationships",
+    "health": "Health & Vitality",
+    "currentYear": "Current Year",
+    "newCalculation": "Start New Calculation",
+    "voidBadge": "Void",
+    "calculatingText": "CALCULATING DESTINY MATRIX...",
+    "terms": {
+      "tiangan": {
+        "jia": "Jia",
+        "yi": "Yi",
+        "bing": "Bing",
+        "ding": "Ding",
+        "wu": "Wu",
+        "ji": "Ji",
+        "geng": "Geng",
+        "xin": "Xin",
+        "ren": "Ren",
+        "gui": "Gui"
+      },
+      "dizhi": {
+        "zi": "Zi (Rat)",
+        "chou": "Chou (Ox)",
+        "yin": "Yin (Tiger)",
+        "mao": "Mao (Rabbit)",
+        "chen": "Chen (Dragon)",
+        "si": "Si (Snake)",
+        "wu_fire": "Wu (Horse)",
+        "wei": "Wei (Goat)",
+        "shen": "Shen (Monkey)",
+        "you": "You (Rooster)",
+        "xu": "Xu (Dog)",
+        "hai": "Hai (Pig)"
+      },
+      "wuxing": {
+        "wood": "Wood",
+        "fire": "Fire",
+        "earth": "Earth",
+        "metal": "Metal",
+        "water": "Water",
+        "unknown": "Unknown"
+      },
+      "shishen": {
+        "zheng_yin": "Direct Seal",
+        "pian_yin": "Indirect Seal",
+        "zheng_guan": "Direct Officer",
+        "qi_sha": "Seven Killings",
+        "zheng_cai": "Direct Wealth",
+        "pian_cai": "Indirect Wealth",
+        "shang_guan": "Hurting Officer",
+        "shi_shen": "Eating God",
+        "bi_jian": "Friend",
+        "jie_cai": "Rob Wealth",
+        "unknown": "Unknown",
+        "day_master": "Day Master"
+      },
+      "zhangsheng": {
+        "chang_sheng": "Birth",
+        "mu_yu": "Bath",
+        "guan_dai": "Youth",
+        "lin_guan": "Adult",
+        "di_wang": "Peak",
+        "shuai": "Decline",
+        "bing": "Sickness",
+        "si": "Death",
+        "mu": "Tomb",
+        "jue": "Extinction",
+        "tai": "Conception",
+        "yang": "Nourishment",
+        "unknown": "Unknown"
+      },
+      "shensha": {
+        "tian_yi_gui_ren": "Noble Man",
+        "tao_hua": "Peach Blossom",
+        "yi_ma": "Traveling Horse",
+        "wen_chang": "Academic Star",
+        "xu_hai": "Void (Xu Hai)",
+        "shen_you": "Void (Shen You)",
+        "wu_wei": "Void (Wu Wei)",
+        "chen_si": "Void (Chen Si)",
+        "yin_mao": "Void (Yin Mao)",
+        "zi_chou": "Void (Zi Chou)",
+        "unknown": "Unknown"
+      },
+      "jieqi": {
+        "立春": "Start of Spring",
+        "雨水": "Rain Water",
+        "惊蛰": "Awakening of Insects",
+        "春分": "Spring Equinox",
+        "清明": "Pure Brightness",
+        "谷雨": "Grain Rain",
+        "立夏": "Start of Summer",
+        "小满": "Grain Buds",
+        "芒种": "Grain in Ear",
+        "夏至": "Summer Solstice",
+        "小暑": "Minor Heat",
+        "大暑": "Major Heat",
+        "立秋": "Start of Autumn",
+        "处暑": "Limit of Heat",
+        "白露": "White Dew",
+        "秋分": "Autumn Equinox",
+        "寒露": "Cold Dew",
+        "霜降": "Frost Descent",
+        "立冬": "Start of Winter",
+        "小雪": "Minor Snow",
+        "大雪": "Major Snow",
+        "冬至": "Winter Solstice",
+        "小寒": "Minor Cold",
+        "大寒": "Major Cold"
+      },
+      "nayin": {
+        "hai_zhong_jin": "Sea Gold",
+        "lu_zhong_huo": "Furnace Fire",
+        "da_lin_mu": "Forest Wood",
+        "lu_pang_tu": "Roadside Earth",
+        "jian_feng_jin": "Sword Gold",
+        "shan_tou_huo": "Mountain Top Fire",
+        "jian_xia_shui": "Stream Water",
+        "cheng_tou_tu": "City Wall Earth",
+        "bai_la_jin": "White Wax Gold",
+        "yang_liu_mu": "Willow Wood",
+        "quan_zhong_shui": "Spring Water",
+        "wu_shang_tu": "Roof Earth",
+        "pi_li_huo": "Thunderbolt Fire",
+        "song_bai_mu": "Pine Wood",
+        "chang_liu_shui": "Long River Water",
+        "sha_zhong_jin": "Sand Gold",
+        "shan_xia_huo": "Mountain Bottom Fire",
+        "ping_di_mu": "Plains Wood",
+        "bi_shang_tu": "Wall Earth",
+        "jin_bo_jin": "Gold Foil",
+        "fu_deng_huo": "Lamp Fire",
+        "tian_he_shui": "Heaven River Water",
+        "da_yi_tu": "Great Post Earth",
+        "chai_chuan_jin": "Hairpin Gold",
+        "sang_zhe_mu": "Mulberry Wood",
+        "da_xi_shui": "Great Stream Water",
+        "sha_zhong_tu": "Sand Earth",
+        "tian_shang_huo": "Heaven Fire",
+        "shi_liu_mu": "Pomegranate Wood",
+        "da_hai_shui": "Ocean Water",
+        "unknown": "Unknown"
+      }
+    },
+    "analysis": {
+      "mingju": {
+        "wuxingTrait": {
+          "wood": "Wood represents benevolence. You have leadership skills and are suitable for education, culture, and arts.",
+          "fire": "Fire represents courtesy. You have expressive skills and are suitable for sales, PR, and performance.",
+          "earth": "Earth represents integrity. You have management skills and are suitable for administration and real estate.",
+          "metal": "Metal represents righteousness. You have decisiveness and are suitable for finance, law, and technology.",
+          "water": "Water represents wisdom. You have adaptability and are suitable for consulting, trade, and tourism."
+        }
+      },
+      "wuxing": {
+        "balance": {
+          "self_strong": "Self is strong and wealthy, gaining time and momentum.",
+          "month_support": "Supported by the Month Pillar.",
+          "year_support": "Supported by the Year Pillar."
+        },
+        "interaction": {
+          "generating": "Wood and Fire generating, or Fire and Earth generating. Generating is auspicious.",
+          "clashing": "Metal and Wood clashing, or Wood and Earth clashing. Clashing can be challenging."
+        }
+      },
+      "shishen": {
+        "pattern": {
+          "official_exposed": "Official star exposed, indicating career success.",
+          "wealth_stored": "Wealth star in storage, indicating good fortune.",
+          "rob_wealth_seated": "Rob Wealth seated, be cautious of financial loss."
+        }
+      },
+      "career": {
+        "management": "You have management talent, suitable for leadership roles.",
+        "business": "You have business acumen, suitable for commerce and investment.",
+        "tech": "You have technical expertise, suitable for R&D and professional services."
+      },
+      "marriage": {
+        "spouse": "Spouse Zodiac: {{zodiac}}",
+        "stability": {
+          "stable": "Loyal in relationships, stable marriage.",
+          "turbulent": "Relationships may have ups and downs; patience is needed.",
+          "neutral": "Relationships are generally balanced."
+        }
+      },
+      "health": {
+        "wood": "Wood governs liver/gallbladder. Exercise: Walking, Tai Chi.",
+        "fire": "Fire governs heart/vessels. Exercise: Swimming, Tai Chi.",
+        "earth": "Earth governs spleen/stomach. Exercise: Yoga, Tai Chi.",
+        "metal": "Metal governs lungs. Exercise: Jogging, Swimming.",
+        "water": "Water governs kidneys. Exercise: Swimming, Yoga."
+      }
+    }
+  },
+  "ainame": {
+    "hero": {
+      "title1": "Grant",
+      "title2": "Name",
+      "desc": "A name is the first gift for your child.\nAI combines poetry and Bazi to create a unique auspicious name.",
+      "seal": "Name",
+      "subtitle": "AI.NAMING.SYSTEM"
+    },
+    "form": {
+      "title": "Start Naming",
+      "surname": "Surname",
+      "placeholder": "Enter surname",
+      "submit": "Generate Now",
+      "surname_required": "Please enter surname",
+      "gender": {
+        "title": "Gender",
+        "boy": "Boy",
+        "girl": "Girl"
+      },
+      "step1": "Basic Info",
+      "step2": "Style Preference",
+      "step3": "Personality Expectations",
+      "birthDate": "Birth Date",
+      "birthTime": "Birth Time",
+      "specificChar": "Fixed Character (Optional)",
+      "placeholder_specificChar": "E.g., generation char or preferred char",
+      "style": "Style",
+      "type": "Type",
+      "next": "Next",
+      "prev": "Previous"
+    },
+    "structure": {
+      "surname": "Surname",
+      "given_name": "Given Name",
+      "add": "Add",
+      "current_length": "Length: {{length}}",
+      "hint": {
+        "fixed": "Click box to set fixed char",
+        "surname": "Click to edit surname"
+      }
+    },
+    "features": {
+      "sectionTitle": "Naming Features",
+      "sectionSubtitle": "// NAMING.FEATURES",
+      "recommend": {
+        "title": "Smart Recommendation",
+        "desc": "AI-powered naming based on traditional naming theory."
+      },
+      "culture": {
+        "title": "Cultural Depth",
+        "desc": "Rich Chinese cultural heritage from poetry and idioms."
+      },
+      "balance": {
+        "title": "Five Elements Balance",
+        "desc": "Balancing the Five Elements based on birth chart."
+      }
+    },
+    "result": {
+      "scoreSuffix": " pts",
+      "aiGenerated": "AI Generated",
+      "sealLuck": "Luck",
+      "title": "Your Exclusive\nAuspicious Name",
+      "subtitle": "Based on {{surname}} family lineage and {{gender}} Bazi analysis",
+      "regenerate": "Regenerate",
+      "save": "Save Result",
+      "fav": "Favorite",
+      "favorited": "Favorited",
+      "myFavorites": "My Favorites",
+      "saveImage": "Save Image",
+      "savePdf": "Save PDF",
+      "details": "Details",
+      "detailsTitle": "Name Analysis for {{name}}",
+      "clearedFavorites": "Favorites cleared",
+      "pdfTitle": "AI Naming Recommendations",
+      "pdfSubtitle": "Selected names for baby \"{{surname}}\"",
+      "imageSaved": "Image saved",
+      "imageSaveFailed": "Failed to save image",
+      "pdfSaved": "PDF saved",
+      "pdfSaveFailed": "Failed to save PDF",
+      "boyBaby": "Boy",
+      "girlBaby": "Girl",
+      "countNames": "{{count}} names total",
+      "analysisTitle": "Destiny Analysis",
+      "meaningAnalysis": "Meaning Analysis",
+      "origin": "Origin",
+      "aiGeneratedResults": "AI Generated Results",
+      "destinyAnalysis": "Destiny Analysis",
+      "examplePrefix": "E.g.: ",
+      "tabs": {
+        "surname": "Surname Analysis",
+        "bazi": "Bazi Analysis",
+        "wuxing": "Five Elements",
+        "advice": "Naming Advice"
+      },
+      "recommendedNames": "Recommended Names",
+      "unsatisfied": "Not satisfied with these names?",
+      "regenerateBatch": "Regenerate 12 new names",
+      "pleaseFavorite": "Please favorite some names first",
+      "viewFavorites": "View Favorites",
+      "tip": "Tip",
+      "config": {
+        "title": "Configuration",
+        "style": "Name Style",
+        "balance": "Five Elements Balance (Based on Bazi)",
+        "birth_date": "Birth Date",
+        "birth_time": "Birth Time",
+        "other": "Other Requirements",
+        "placeholder_other": "E.g., avoid certain chars, specific meaning...",
+        "balance_options": {
+          "auto": "Auto",
+          "metal": "Strengthen Metal",
+          "wood": "Strengthen Wood",
+          "water": "Strengthen Water",
+          "fire": "Strengthen Fire",
+          "earth": "Strengthen Earth"
+        }
+      },
+      "mock": {
+        "name1": {
+          "suffix": "Haoran",
+          "meaning": "Overwhelmingly righteous, broad-minded."
+        },
+        "name2": {
+          "suffix": "Yuxuan",
+          "meaning": "Dignified appearance, elegant demeanor."
+        },
+        "name3": {
+          "suffix": "Zimo",
+          "meaning": "Literary excellence, scholarly family."
+        },
+        "name4": {
+          "suffix": "Zihan",
+          "meaning": "Thriving like the catalpa tree, possessing self-restraint."
+        },
+        "name5": {
+          "suffix": "Sirui",
+          "meaning": "Quick-witted, intelligent and wise."
+        },
+        "name6": {
+          "suffix": "Ruoxu",
+          "meaning": "Humble like a valley, wise but appearing simple."
+        }
+      }
+    },
+    "styles": {
+      "literary": "Literary",
+      "chinese": "Classical Chinese",
+      "minimalist": "Minimalist",
+      "modern": "Modern",
+      "nature": "Nature"
+    },
+    "types": {
+      "graceful": "Graceful",
+      "bold": "Bold",
+      "smart": "Smart",
+      "gentle": "Gentle",
+      "lively": "Lively"
+    },
+    "examples": {
+      "literary": { "boy": "Yunshu, Moyan, Qingci", "girl": "Shihan, Ruolin, Mengyao" },
+      "chinese": { "boy": "Chengxi, Lixian, Derun", "girl": "Wanyi, Shuhui, Jiayi" },
+      "minimalist": { "boy": "Yifan, Zixuan, Mingzhe", "girl": "Xinyue, Siqi, Yuqing" },
+      "modern": { "boy": "Chenxi, Yifei, Zeyu", "girl": "Yuyan, Xinyan, Zhiruo" },
+      "nature": { "boy": "Linfeng, Quansheng, Yuefeng", "girl": "Xiyun, Xueqing, Zhilan" }
+    }
+  },
+  "mbti": {
+    "test": {
+      "error": "Unable to load questions",
+      "viewResult": "View Result"
+    },
+    "hero": {
+      "cta": "Start Test",
+      "seal": "Mind",
+      "subtitle": "MBTI.CHARACTER.ANALYSIS",
+      "title1": "See",
+      "title2": "Self",
+      "desc": "Merging Jungian psychology with modern AI.\nExplore your subconscious personality code.\nScientific Analysis · Self-Discovery · Career Guidance"
+    },
+    "testMode": {
+      "title": "Choose Test Mode",
+      "quick": "Quick Test",
+      "quickDesc": "7 questions, 3 minutes for quick insights",
+      "full": "Full Test",
+      "fullDesc": "88 questions, 20 minutes for deep analysis",
+      "testCompleted": "Test Completed",
+      "testCompletedDesc": "Congratulations on completing all the questions! Click the button below to view your personality analysis report."
+    },
+    "landing": {
+      "hero": {
+        "title1": "See",
+        "title2": "Self",
+        "desc": "Merging Jungian psychology with modern AI.\nExplore your subconscious personality code.\nScientific Analysis · Self-Discovery · Career Guidance",
+        "seal": "Mind",
+        "subtitle": "MBTI.CHARACTER.ANALYSIS",
+        "start": "Start Test"
+      },
+      "features": {
+        "title": "Core Features",
+        "subtitle": "// CORE.FEATURES",
+        "test": {
+          "title": "Scientific Test",
+          "desc": "Authoritative assessment system based on Jungian psychological types."
+        },
+        "ai": {
+          "title": "AI Deep Analysis",
+          "desc": "AI-generated personalized personality report, over 10,000 words."
+        },
+        "career": {
+          "title": "Career & Relations",
+          "desc": "Precise career advice and relationship matching guidance."
+        }
+      }
+    },
+    "header": {
+      "protocol": "MBTI Protocol",
+      "title": "Personality Assessment",
+      "subtitle": "Decentralized personality analysis — concise, rigorous, privacy-first."
+    },
+    "cover": "16 TYPES • DEEP ANALYSIS",
+    "quick": {
+      "title": "Quick Scan",
+      "subtitle": "7 QUESTIONS",
+      "time": "2 MIN",
+      "desc": "Rapid, low-friction assessment for a quick personality snapshot."
+    },
+    "full": {
+      "title": "Deep Analysis",
+      "subtitle": "92 QUESTIONS",
+      "time": "12 MIN",
+      "desc": "In-depth multi-dimensional profiling for a complete personality report."
+    },
+    "features": {
+      "scientific": "Scientific",
+      "instant": "Instant",
+      "comprehensive": "Comprehensive",
+      "privacy": "Privacy",
+      "sectionTitle": "Core Features",
+      "sectionSubtitle": "// CORE.FEATURES",
+      "scientific": {
+        "title": "Scientific Test",
+        "desc": "Authoritative assessment system based on Jungian psychological types."
+      },
+      "analysis": {
+        "title": "AI Deep Analysis",
+        "desc": "AI-generated personalized personality report, over 10,000 words."
+      },
+      "career": {
+        "title": "Career & Relations",
+        "desc": "Precise career advice and relationship matching guidance."
+      }
+    },
+    "footer": {
+      "powered": "POWERED BY MYERS-BRIGGS",
+      "assessments": "ASSESSMENTS",
+      "completed": "COMPLETED"
+    },
+    "resultPage": {
+      "analyzing": "Analyzing your personality traits...",
+      "error": {
+        "title": "Unable to load test results",
+        "home": "Return Home"
+      },
+      "back": "Back",
+      "share": "Share Result",
+      "retest": "Retest",
+      "aiScore": "AI Match Score",
+      "strengths": "Strengths",
+      "recommendations": "Recommendations",
+      "career": "Career Development",
+      "suitableCareers": "Suitable Careers:",
+      "workplace": "Workplace Preference:",
+      "aiInsights": "AI Deep Insights",
+      "relationships": "Relationships",
+      "shareText": "My MBTI personality type is {{type}} - {{title}}! {{description}}",
+      "copySuccess": "Result copied to clipboard!",
+      "shareTitle": "Share Success",
+      "shareSuccess": "Result copied to clipboard"
+    },
+    "questions": [
+      {
+        "title": "1. My best ideas at work come from",
+        "selections": [
+          {
+            "text": "Discussing and sharing ideas with others.",
+            "aiPrompt": "Extroverted (E): Gains energy and inspiration through interaction with the outside world, good at social communication, values teamwork, likes to spark creativity in discussions, suitable for work environments requiring interpersonal interaction."
+          },
+          {
+            "text": "Thinking quietly by myself.",
+            "aiPrompt": "Introverted (I): Gains energy and inspiration through internal reflection, good at independent work, values deep thinking, likes quiet and focused environments, more suitable for work requiring concentration."
+          }
+        ]
+      },
+      {
+        "title": "2. When I chair a meeting, I usually",
+        "selections": [
+          {
+            "text": "Stick strictly to the agenda I prepared in advance.",
+            "aiPrompt": "Judging (J): Tends to handle matters in a planned and organized way, values results and efficiency, likes to complete tasks step by step, organized and clear goals."
+          },
+          {
+            "text": "Am more flexible and open to whatever comes up.",
+            "aiPrompt": "Perceiving (P): Tends to adapt flexibly to changes, values process and possibilities, likes to improvise, open to new things, more creative and adaptable."
+          }
+        ]
+      },
+      {
+        "title": "3. When dealing with subordinates' development, I am most likely to",
+        "selections": [
+          {
+            "text": "Discuss problems with their behavior.",
+            "aiPrompt": "Thinking (T): Tends to focus on objective facts and logical analysis, handles problems based on reason and principles, values fairness and consistency, good at finding the root cause of problems."
+          },
+          {
+            "text": "Dislike telling them unpleasant things.",
+            "aiPrompt": "Feeling (F): Tends to focus on others' feelings and relationships, handles problems with consideration and harmony, values team members' feelings, good at maintaining harmonious relationships."
+          }
+        ]
+      },
+      {
+        "title": "4. I prefer my workplace to be",
+        "selections": [
+          {
+            "text": "Structured with clear rules and regulations.",
+            "aiPrompt": "Judging (J): Prefers orderly and predictable environments, values structure and norms, likes clear guidelines, performs better in environments with clear rules."
+          },
+          {
+            "text": "More open, relaxed, and free.",
+            "aiPrompt": "Perceiving (P): Prefers free and flexible environments, values autonomy and creativity, likes more space for self-expression, strong adaptability."
+          }
+        ]
+      },
+      {
+        "title": "5. I would prefer a supervisor who interacts with me",
+        "selections": [
+          {
+            "text": "Frequently every day.",
+            "aiPrompt": "Extroverted (E): Needs frequent social interaction to maintain energy, likes teamwork and communication-intensive environments, more active in teams with rich interpersonal relationships."
+          },
+          {
+            "text": "Only occasionally.",
+            "aiPrompt": "Introverted (I): Prefers less disturbance and more independent work space, needs time to focus on thinking, likes autonomous working methods, more efficient in quiet environments."
+          }
+        ]
+      },
+      {
+        "title": "6. When making decisions, I tend to",
+        "selections": [
+          {
+            "text": "Base them on objective facts and logical analysis.",
+            "aiPrompt": "Thinking (T): Values rational analysis in decision-making, based on data and facts, pursues objectivity and fairness, good at discovering the key and essence of problems."
+          },
+          {
+            "text": "Consider others' feelings and relationships.",
+            "aiPrompt": "Feeling (F): Values human factors in decision-making, considers the impact on others, pursues harmonious coexistence, good at handling interpersonal relationships, values team cohesion."
+          }
+        ]
+      },
+      {
+        "title": "7. When facing new challenges, I usually",
+        "selections": [
+          {
+            "text": "Create detailed plans and steps.",
+            "aiPrompt": "Judging (J): Likes to solve problems in an organized way, values structure and planning, tends to advance step by step, more efficient in orderly environments."
+          },
+          {
+            "text": "Adapt to changes and go with the flow.",
+            "aiPrompt": "Perceiving (P): Likes to respond flexibly, values adaptability and improvisation, good at seizing sudden opportunities, performs better in changing environments."
+          }
+        ]
+      },
+      {
+        "title": "8. In social situations, I tend to",
+        "selections": [
+          {
+            "text": "Initiate conversations with strangers and expand my social circle.",
+            "aiPrompt": "Extroverted (E): Active and proactive in social situations, enjoys interacting with people, good at building new relationships, gains energy and motivation in interpersonal interactions."
+          },
+          {
+            "text": "Have deep conversations with familiar friends.",
+            "aiPrompt": "Introverted (I): Prefers deep communication in social situations, values quality over quantity, likes to build deep relationships with a few people, more comfortable in familiar environments."
+          }
+        ]
+      }
+    ],
+    "types": {
+      "INTJ": {
+        "title": "Architect",
+        "description": "Imaginative and strategic thinkers, with a plan for everything.",
+        "strengths": [
+          "Strategic Thinking",
+          "Independent",
+          "Rational",
+          "Long-term Planning"
+        ],
+        "weaknesses": [
+          "Overconfident",
+          "Impatient",
+          "Poor Expression",
+          "Overly Critical"
+        ],
+        "careers": [
+          "Software Architect",
+          "Management Consultant",
+          "Research Scientist",
+          "Investment Analyst"
+        ],
+        "workplace": "Environments requiring autonomy, challenging tasks, and innovation.",
+        "relationships": "Values deep connections, needs a partner who understands and supports.",
+        "aiAnalysis": {
+          "insights": [
+            "Your strategic thinking ability is top-tier among all types.",
+            "Independent work style makes you well-suited for tasks requiring deep thought.",
+            "Strong intuition helps you see patterns and possibilities others miss."
+          ],
+          "recommendations": [
+            "Practice expressing your ideas to better communicate with the team.",
+            "Learn to appreciate others' strengths and avoid being overly critical.",
+            "Consider emotional factors when making decisions."
+          ]
+        }
+      },
+      "INTP": {
+        "title": "Logician",
+        "description": "Innovative inventors with an unquenchable thirst for knowledge.",
+        "strengths": [
+          "Logical Analysis",
+          "Creative Thinking",
+          "Objective",
+          "Adaptable"
+        ],
+        "weaknesses": [
+          "Procrastination",
+          "Disorganized",
+          "Socially Awkward",
+          "Over-analyzing"
+        ],
+        "careers": [
+          "Research Scientist",
+          "Software Developer",
+          "Philosophy Professor",
+          "Systems Analyst"
+        ],
+        "workplace": "Environments offering intellectual challenges, research freedom, and flexibility.",
+        "relationships": "Needs a partner who can understand their complex thought patterns.",
+        "aiAnalysis": {
+          "insights": [
+            "Your logical thinking makes you excellent at solving complex problems.",
+            "Creative thinking helps you excel in theoretical research and concept development.",
+            "Adaptability allows you to find solutions in various environments."
+          ],
+          "recommendations": [
+            "Strive to turn ideas into practical actions.",
+            "Cultivate basic organizational and time management skills.",
+            "Practice expressing complex concepts in simple language."
+          ]
+        }
+      },
+      "ENTJ": {
+        "title": "Commander",
+        "description": "Bold, imaginative and strong-willed leaders, always finding a way - or making one.",
+        "strengths": [
+          "Leadership",
+          "Strategic Planning",
+          "Decisive",
+          "Goal-oriented"
+        ],
+        "weaknesses": [
+          "Domineering",
+          "Impatient",
+          "Overlooks Details",
+          "Insensitive"
+        ],
+        "careers": [
+          "CEO",
+          "Management Consultant",
+          "Lawyer",
+          "Entrepreneur"
+        ],
+        "workplace": "Positions that are challenging and require leadership and decision-making power.",
+        "relationships": "Needs a partner who understands and supports their ambitions.",
+        "aiAnalysis": {
+          "insights": [
+            "Your leadership ability is the most prominent among all types.",
+            "Strategic thinking and execution make you highly influential.",
+            "Decisiveness allows you to perform well in crisis situations."
+          ],
+          "recommendations": [
+            "Learn to listen to others' opinions and suggestions.",
+            "Cultivate sensitivity to team members' emotions.",
+            "Delegate appropriately and build trust."
+          ]
+        }
+      },
+      "ENTP": {
+        "title": "Debater",
+        "description": "Smart and curious thinkers who cannot resist an intellectual challenge.",
+        "strengths": [
+          "Innovative",
+          "Debating Skills",
+          "Adaptable",
+          "Enthusiastic"
+        ],
+        "weaknesses": [
+          "Disorganized",
+          "Unfocused",
+          "Sharp-tongued",
+          "Impractical"
+        ],
+        "careers": [
+          "Creative Director",
+          "Politician",
+          "Inventor",
+          "Consultant"
+        ],
+        "workplace": "Environments offering diversity, challenges, and opportunities for innovation.",
+        "relationships": "Needs a partner who can keep up with their speed of thought and curiosity.",
+        "aiAnalysis": {
+          "insights": [
+            "Your innovative thinking gives you a unique advantage in problem-solving.",
+            "Debating skills make you strong in communication and persuasion.",
+            "Adaptability allows you to learn quickly in different fields."
+          ],
+          "recommendations": [
+            "Cultivate focus and avoid distractions.",
+            "Learn to balance critical thinking with supportive feedback.",
+            "Turn creativity into concrete action plans."
+          ]
+        }
+      },
+      "INFJ": {
+        "title": "Advocate",
+        "description": "Quiet and mystical, yet very inspiring and tireless idealists.",
+        "strengths": [
+          "Insightful",
+          "Compassionate",
+          "Creative",
+          "Principled"
+        ],
+        "weaknesses": [
+          "Over-sensitive",
+          "Perfectionist",
+          "Prone to Burnout",
+          "Overly Idealistic"
+        ],
+        "careers": [
+          "Counselor",
+          "Writer",
+          "Social Worker",
+          "HR"
+        ],
+        "workplace": "Jobs that help others, realize value, and allow for creativity.",
+        "relationships": "Seeks deep, meaningful emotional connections.",
+        "aiAnalysis": {
+          "insights": [
+            "Your insight and compassion make you particularly suitable for helping professions.",
+            "Creativity gives you a unique talent in arts and writing.",
+            "Strong values guide you to make meaningful choices."
+          ],
+          "recommendations": [
+            "Learn to set boundaries to avoid emotional exhaustion.",
+            "Accept imperfection and allow yourself to make mistakes.",
+            "Regularly practice self-care and recovery."
+          ]
+        }
+      },
+      "INFP": {
+        "title": "Mediator",
+        "description": "Poetic, kind and altruistic people, always eager to help a good cause.",
+        "strengths": [
+          "Creative",
+          "Compassionate",
+          "Principled",
+          "Adaptable"
+        ],
+        "weaknesses": [
+          "Overly Idealistic",
+          "Self-critical",
+          "Indecisive",
+          "Conflict-averse"
+        ],
+        "careers": [
+          "Writer",
+          "Artist",
+          "Counselor",
+          "Educator"
+        ],
+        "workplace": "Environments aligned with personal values and allowing for creativity.",
+        "relationships": "Needs a partner who understands, supports, and shares values.",
+        "aiAnalysis": {
+          "insights": [
+            "Your creativity gives you unique talent in arts and expression.",
+            "Strong values enable you to make meaningful choices.",
+            "Adaptability and compassion make you an excellent supporter."
+          ],
+          "recommendations": [
+            "Learn to turn creativity into practical action.",
+            "Cultivate decision-making skills and avoid over-analyzing.",
+            "Establish healthy boundaries and self-awareness."
+          ]
+        }
+      },
+      "ENFJ": {
+        "title": "Protagonist",
+        "description": "Charismatic and inspiring leaders, able to mesmerize their listeners.",
+        "strengths": [
+          "Leadership",
+          "Empathy",
+          "Communication",
+          "Organizational"
+        ],
+        "weaknesses": [
+          "Overly Idealistic",
+          "Lack of Self-care",
+          "Over-sensitive",
+          "Hard to Criticize"
+        ],
+        "careers": [
+          "Teacher",
+          "Trainer",
+          "HR",
+          "Non-profit Management"
+        ],
+        "workplace": "Environments that help others grow and realize social value.",
+        "relationships": "Seeks a partner for mutual support and growth.",
+        "aiAnalysis": {
+          "insights": [
+            "Your leadership and empathy make you a natural motivator.",
+            "Communication skills allow you to effectively convey vision and values.",
+            "Organizational skills help you turn ideals into concrete actions."
+          ],
+          "recommendations": [
+            "Learn to pay attention to your own needs and feelings.",
+            "Cultivate the ability to give constructive feedback.",
+            "Set realistic expectations and goals."
+          ]
+        }
+      },
+      "ENFP": {
+        "title": "Campaigner",
+        "description": "Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.",
+        "strengths": [
+          "Enthusiastic",
+          "Creative",
+          "Sociable",
+          "Adaptable"
+        ],
+        "weaknesses": [
+          "Disorganized",
+          "Unfocused",
+          "Over-optimistic",
+          "Sensitive"
+        ],
+        "careers": [
+          "Marketing",
+          "PR Specialist",
+          "Counselor",
+          "Entrepreneur"
+        ],
+        "workplace": "Environments offering social interaction, creative expression, and diversity.",
+        "relationships": "Needs a partner who understands their emotional needs and supports their growth.",
+        "aiAnalysis": {
+          "insights": [
+            "Your enthusiasm and creativity make you excel in innovative projects.",
+            "Social skills make you an excellent team collaborator.",
+            "Adaptability allows you to adjust quickly in changing environments."
+          ],
+          "recommendations": [
+            "Cultivate organization and time management skills.",
+            "Learn to focus and avoid distractions.",
+            "Establish emotional regulation mechanisms."
+          ]
+        }
+      }
+    }
+  },
+  "question": {
+    "quickAssessment": "Quick Assessment",
+    "comprehensiveAssessment": "Comprehensive Assessment",
+    "questionLabel": "Question",
+    "completion": "Completion",
+    "estimatedRemaining": "Estimated remaining {{min}} minutes",
+    "exit": "Exit Test",
+    "resume": "Resume",
+    "discardDraft": "Discard Draft",
+    "continue": "Continue",
+    "confirmExit": "Confirm Exit",
+    "continueAnswering": "Continue Answering",
+    "next": "Next",
+    "previous": "Previous",
+    "viewResult": "View result"
+  },
+  "result": {
+    "assessmentResult": "Assessment Result",
+    "yourReport": "Your personality assessment report",
+    "traitOverview": "Trait Overview",
+    "retake": "Retake Assessment",
+    "comprehensiveTest": "Comprehensive Test",
+    "basedOnQuick": "Based on quick mode — consider the full test for deeper analysis",
+    "basedOnFull": "Based on full mode — 92-question professional analysis"
+  },
+  "admin": {
+    "title": "System Admin",
+    "subtitle": "AI Configuration Panel",
+    "reset": "Reset",
+    "save": "Save Config",
+    "saved": "Config saved",
+    "saveFailed": "Save failed",
+    "resetConfirm": "Are you sure you want to reset to default config?",
+    "resetSuccess": "Reset to default config",
+    "testConnection": "Test Connection",
+    "testing": "Testing...",
+    "testSuccess": "Test successful",
+    "testFailed": "Test failed",
+    "connecting": "Connecting...",
+    "connectionSuccess": "Connection successful ({{latency}}ms)",
+    "connectionFailed": "Connection failed: ",
+    "errors": "Config Errors",
+    "provider": {
+      "title": "AI Provider",
+      "dashscope": "Alibaba DashScope",
+      "openai": "OpenAI",
+      "ollama": "Ollama (Local)",
+      "custom": "Custom",
+      "desc": {
+        "dashscope": "Qwen series models",
+        "openai": "GPT series models",
+        "ollama": "Locally running open source models",
+        "custom": "Custom OpenAI compatible API"
+      }
+    },
+    "api": {
+      "title": "API Configuration",
+      "url": "API URL",
+      "key": "API Key",
+      "configured": "(Configured)",
+      "model": "Model",
+      "ollamaHost": "Ollama Host",
+      "placeholder": {
+        "key": "Enter API Key",
+        "ollamaKey": "ollama (optional)",
+        "model": "Model name",
+        "selectPreset": "Select preset..."
+      }
+    },
+    "params": {
+      "title": "Model Parameters",
+      "maxTokens": "Max Tokens",
+      "temperature": "Temperature",
+      "hint": {
+        "maxTokens": "100 - 128000",
+        "temperature": "0 - 2 (higher = more random)"
+      }
+    },
+    "other": {
+      "title": "Other Settings",
+      "debug": "Enable Debug Log",
+      "debugDesc": "Log AI request and response details to console"
+    },
+    "connection": {
+      "title": "Connection Test",
+      "desc": "Send a test request to verify the API configuration"
+    },
+    "lastUpdated": "Last Updated"
+  }
+}

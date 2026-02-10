@@ -1,0 +1,55 @@
+.appCard {
+  --app-color: rgb(235 68 50);
+}
+
+.appCard[data-accent='bazi'] {
+  --app-color: rgb(230 0 0);
+}
+
+.appCard[data-accent='ainame'] {
+  --app-color: rgb(234 88 12);
+}
+
+.appCard[data-accent='mbti'] {
+  --app-color: rgb(255 255 255);
+}
+
+.appCardBackground {
+  background: radial-gradient(circle at top right, rgba(26, 26, 26, 0.95), rgba(0, 0, 0, 0.95));
+}
+
+.appCard[data-accent='bazi'] .appCardBackground {
+  background: radial-gradient(circle at top right, rgba(42, 10, 10, 0.95), rgba(0, 0, 0, 0.95));
+}
+
+.appCard[data-accent='ainame'] .appCardBackground {
+  background: radial-gradient(circle at top right, rgba(26, 15, 5, 0.95), rgba(0, 0, 0, 0.95));
+}
+
+.appCard[data-accent='mbti'] .appCardBackground {
+  background: radial-gradient(circle at top right, rgba(26, 26, 26, 0.9), rgba(0, 0, 0, 0.95));
+}
+
+.appCardPattern {
+  position: absolute;
+  inset: 0;
+}
+
+.appCardDots {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.appCardWaves {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.08) 10px,
+    rgba(255, 255, 255, 0.08) 20px
+  );
+}
+
+.appCardDot {
+  background: rgba(255, 255, 255, 0.4);
+}

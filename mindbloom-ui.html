@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBloom - 显化应用UI设计</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-100: #FF4081;
+            --primary-200: #ff79b0;
+            --primary-300: #ffe4ff;
+            --accent-100: #00E5FF;
+            --accent-200: #00829b;
+            --text-100: #333333;
+            --text-200: #5c5c5c;
+            --bg-100: #F5F5F5;
+            --bg-200: #ebebeb;
+            --bg-300: #c2c2c2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-100);
+            color: var(--text-100);
+            overflow-x: auto;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .phone {
+            width: 375px;
+            height: 812px;
+            border: 1px solid var(--bg-300);
+            border-radius: 30px;
+            background: var(--bg-100);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .phone::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 25px;
+            background: var(--bg-200);
+            border-radius: 15px;
+            z-index: 10;
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .glass-morphism {
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            filter: brightness(1.05);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--primary-100), var(--primary-200));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,64,129,0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(255,64,129,0.4);
+        }
+
+        .input {
+            background: rgba(255,255,255,0.8);
+            border: none;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 12px;
+            backdrop-filter: blur(5px);
+        }
+
+        .input:focus {
+            outline: none;
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 0 0 2px var(--primary-100);
+        }
+
+        .tab-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .tab-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-200);
+            text-decoration: none;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .tab-item.active {
+            color: var(--primary-100);
+        }
+
+        .tab-item svg {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 4px;
+        }
+
+        .chart {
+            width: 100%;
+            height: 200px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 12px;
+            padding: 16px;
+            backdrop-filter: blur(5px);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-200);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-100), var(--accent-100));
+            border-radius: 4px;
+            animation: progress 2s ease-out;
+        }
+
+        @keyframes progress {
+            from { width: 0%; }
+            to { width: 75%; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Splash Screen -->
+        <div class="phone">
+            <div class="screen" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--primary-100), var(--accent-100));">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="white">
+                    <use href="#icon-sparkles"></use>
+                </svg>
+                <h1 style="font-size: 32px; font-weight: 800; color: white; margin: 20px 0 10px;">MindBloom</h1>
+                <p style="color: rgba(255,255,255,0.8); font-size: 16px;">Manifest Your Dreams</p>
+                <div style="margin-top: 40px; width: 40px; height: 40px; border: 3px solid rgba(255,255,255,0.3); border-top: 3px solid white; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+            </div>
+        </div>
+
+        <!-- Home/Dashboard -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Good morning, Alex!</h2>
+                    <p style="color: var(--text-200); font-size: 16px; margin-bottom: 24px;">"I am worthy of all the good things life has to offer."</p>
+
+                    <div class="card fade-in">
+                        <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px;">Today's Focus</h3>
+                        <p style="color: var(--text-200); margin-bottom: 16px;">Complete the marketing campaign for Q1</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <p style="font-size: 14px; color: var(--text-200);">75% Complete</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Quick Actions</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <button class="btn" style="padding: 16px; font-size: 14px;">Add Goal</button>
+                            <button class="btn" style="padding: 16px; font-size: 14px; background: linear-gradient(135deg, var(--accent-100), var(--accent-200));">View Affirmations</button>
+                            <button class="btn" style="padding: 16px; font-size: 14px; background: linear-gradient(135deg, var(--primary-200), var(--primary-300));">Gratitude Journal</button>
+                            <button class="btn" style="padding: 16px; font-size: 14px; background: linear-gradient(135deg, var(--accent-200), var(--primary-100));">Vision Board</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Gratitude Reminder</h3>
+                        <p style="color: var(--text-200); font-size: 14px;">What are you grateful for today?</p>
+                        <button class="btn" style="margin-top: 12px; width: 100%;">Write Entry</button>
+                    </div>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals List -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">My Goals</h2>
+
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                            <h3 style="font-size: 18px; font-weight: 600;">Career Advancement</h3>
+                            <span style="background: var(--primary-100); color: white; padding: 4px 8px; border-radius: 8px; font-size: 12px;">In Progress</span>
+                        </div>
+                        <p style="color: var(--text-200); font-size: 14px; margin-bottom: 12px;">Achieve senior position by end of year</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                        <p style="font-size: 14px; color: var(--text-200);">60% Complete</p>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                            <h3 style="font-size: 18px; font-weight: 600;">Health & Fitness</h3>
+                            <span style="background: var(--accent-100); color: white; padding: 4px 8px; border-radius: 8px; font-size: 12px;">Completed</span>
+                        </div>
+                        <p style="color: var(--text-200); font-size: 14px; margin-bottom: 12px;">Run a marathon</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                        <p style="font-size: 14px; color: var(--text-200);">100% Complete</p>
+                    </div>
+
+                    <button class="btn" style="width: 100%; margin-top: 20px;">+ Add New Goal</button>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goal Detail -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">Career Advancement</h2>
+                    <p style="color: var(--text-200); margin-bottom: 20px;">Achieve senior position by end of year</p>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Progress Chart</h3>
+                        <div class="chart">
+                            <svg width="100%" height="100%" viewBox="0 0 300 150">
+                                <path d="M0,100 Q75,50 150,75 T300,25" stroke="var(--primary-100)" stroke-width="3" fill="none" stroke-dasharray="400" stroke-dashoffset="400" style="animation: draw 2s ease-in-out forwards;"></path>
+                                <circle cx="0" cy="100" r="4" fill="var(--primary-100)"></circle>
+                                <circle cx="75" cy="50" r="4" fill="var(--primary-100)"></circle>
+                                <circle cx="150" cy="75" r="4" fill="var(--primary-100)"></circle>
+                                <circle cx="225" cy="25" r="4" fill="var(--primary-100)"></circle>
+                                <circle cx="300" cy="25" r="4" fill="var(--primary-100)"></circle>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Affirmations</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: var(--primary-300); color: var(--primary-100); padding: 6px 12px; border-radius: 20px; font-size: 14px;">I am capable</span>
+                            <span style="background: var(--primary-300); color: var(--primary-100); padding: 6px 12px; border-radius: 20px; font-size: 14px;">I deserve success</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Vision Board</h3>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+                            <image href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" width="100%" height="60" style="border-radius: 8px; object-fit: cover;"></image>
+                            <image href="https://images.unsplash.com/photo-1552664730-d307ca884978?w=100&h=100&fit=crop" width="100%" height="60" style="border-radius: 8px; object-fit: cover;"></image>
+                            <image href="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=100&h=100&fit=crop" width="100%" height="60" style="border-radius: 8px; object-fit: cover;"></image>
+                        </div>
+                    </div>
+
+                    <button class="btn" style="width: 100%; margin-top: 20px;">Add Progress</button>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Goal -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Create New Goal</h2>
+
+                    <input type="text" class="input" placeholder="Goal Title" value="Learn a new language">
+                    <textarea class="input" placeholder="Goal Description" rows="4">I want to become fluent in Spanish within 6 months</textarea>
+
+                    <select class="input">
+                        <option>Personal</option>
+                        <option>Career</option>
+                        <option>Health</option>
+                        <option>Finance</option>
+                    </select>
+
+                    <input type="date" class="input">
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Upload Vision Images</h3>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                            <image href="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=150&h=100&fit=crop" width="100%" height="80" style="border-radius: 8px; object-fit: cover;"></image>
+                            <div style="width: 100%; height: 80px; background: var(--bg-200); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-200); font-size: 24px;">+</div>
+                        </div>
+                    </div>
+
+                    <button class="btn" style="width: 100%; margin-top: 20px;">Create Goal</button>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Affirmations List -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Affirmations</h2>
+
+                    <div style="display: flex; gap: 8px; margin-bottom: 20px;">
+                        <button class="btn" style="background: var(--primary-300); color: var(--primary-100); font-size: 14px;">All</button>
+                        <button class="btn" style="background: var(--bg-200); color: var(--text-100); font-size: 14px;">Success</button>
+                        <button class="btn" style="background: var(--bg-200); color: var(--text-100); font-size: 14px;">Health</button>
+                    </div>
+
+                    <div class="card">
+                        <p style="font-size: 16px; font-weight: 500; margin-bottom: 12px;">"I am worthy of all the good things life has to offer."</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-200); font-size: 14px;">Success</span>
+                            <button class="btn" style="padding: 8px 16px; font-size: 14px;">Practice</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p style="font-size: 16px; font-weight: 500; margin-bottom: 12px;">"I attract positive energy and opportunities."</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-200); font-size: 14px;">Abundance</span>
+                            <button class="btn" style="padding: 8px 16px; font-size: 14px;">Practice</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p style="font-size: 16px; font-weight: 500; margin-bottom: 12px;">"My body is healthy, strong, and full of energy."</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-200); font-size: 14px;">Health</span>
+                            <button class="btn" style="padding: 8px 16px; font-size: 14px;">Practice</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Affirmation Practice -->
+        <div class="phone">
+            <div class="screen" style="background: linear-gradient(135deg, var(--primary-100), var(--accent-100)); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="glass-morphism" style="padding: 40px; text-align: center; max-width: 300px;">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="white" style="margin-bottom: 20px;">
+                        <use href="#icon-heart"></use>
+                    </svg>
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">"I am worthy of all the good things life has to offer."</h2>
+                    <p style="font-size: 16px; opacity: 0.8; margin-bottom: 30px;">Repeat this affirmation with conviction</p>
+                    <div style="display: flex; justify-content: center; gap: 20px;">
+                        <button class="btn pulse" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3);">5 min</button>
+                        <button class="btn" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3);">10 min</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gratitude Journal List -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Gratitude Journal</h2>
+
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                            <h3 style="font-size: 18px; font-weight: 600;">Today, Dec 15</h3>
+                            <span style="color: var(--text-200); font-size: 14px;">3 entries</span>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="color: var(--text-200); font-size: 14px; margin-bottom: 4px;">• My health and energy</li>
+                            <li style="color: var(--text-200); font-size: 14px; margin-bottom: 4px;">• Supportive friends and family</li>
+                            <li style="color: var(--text-200); font-size: 14px;">• Opportunities for growth</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                            <h3 style="font-size: 18px; font-weight: 600;">Yesterday, Dec 14</h3>
+                            <span style="color: var(--text-200); font-size: 14px;">3 entries</span>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="color: var(--text-200); font-size: 14px; margin-bottom: 4px;">• A beautiful sunrise</li>
+                            <li style="color: var(--text-200); font-size: 14px; margin-bottom: 4px;">• Delicious coffee</li>
+                            <li style="color: var(--text-200); font-size: 14px;">• Productive work day</li>
+                        </ul>
+                    </div>
+
+                    <button class="btn" style="width: 100%; margin-top: 20px;">+ Add Today's Entry</button>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Gratitude Entry -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Today's Gratitude</h2>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">What are you grateful for?</h3>
+                        <textarea class="input" placeholder="I'm grateful for..." rows="3"></textarea>
+                        <textarea class="input" placeholder="I'm grateful for..." rows="3"></textarea>
+                        <textarea class="input" placeholder="I'm grateful for..." rows="3"></textarea>
+                        <button class="btn" style="width: 100%; margin-top: 12px;">+ Add Another</button>
+                    </div>
+
+                    <button class="btn" style="width: 100%; margin-top: 20px;">Save Entry</button>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision Board -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Vision Board</h2>
+
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px;">
+                        <image href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" width="100%" height="120" style="border-radius: 12px; object-fit: cover;"></image>
+                        <image href="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=150&fit=crop" width="100%" height="120" style="border-radius: 12px; object-fit: cover;"></image>
+                        <image href="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=150&h=150&fit=crop" width="100%" height="120" style="border-radius: 12px; object-fit: cover;"></image>
+                        <image href="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=150&h=150&fit=crop" width="100%" height="120" style="border-radius: 12px; object-fit: cover;"></image>
+                        <image href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=150&h=150&fit=crop" width="100%" height="120" style="border-radius: 12px; object-fit: cover;"></image>
+                        <image href="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=150&h=150&fit=crop" width="100%" height="120" style="border-radius: 12px; object-fit: cover;"></image>
+                    </div>
+
+                    <button class="btn" style="width: 100%;">+ Add Image</button>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="phone">
+            <div class="screen">
+                <div style="padding: 20px 0;">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Settings</h2>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 16px;">Profile</h3>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 60px; height: 60px; background: var(--primary-100); border-radius: 30px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">A</div>
+                            <div>
+                                <p style="font-weight: 600;">Alex Johnson</p>
+                                <p style="color: var(--text-200); font-size: 14px;">alex@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 16px;">Notifications</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                            <span>Daily Reminders</span>
+                            <div style="width: 40px; height: 20px; background: var(--primary-100); border-radius: 10px; position: relative;">
+                                <div style="width: 16px; height: 16px; background: white; border-radius: 8px; position: absolute; right: 2px; top: 2px;"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>Weekly Progress</span>
+                            <div style="width: 40px; height: 20px; background: var(--bg-200); border-radius: 10px; position: relative;">
+                                <div style="width: 16px; height: 16px; background: white; border-radius: 8px; position: absolute; left: 2px; top: 2px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 16px;">Theme</h3>
+                        <div style="display: flex; gap: 12px;">
+                            <button class="btn" style="background: var(--bg-100); color: var(--text-100); flex: 1;">Light</button>
+                            <button class="btn" style="background: var(--text-100); color: var(--bg-100); flex: 1;">Dark</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <button class="btn" style="width: 100%; background: var(--bg-200); color: var(--text-100);">About MindBloom</button>
+                        <button class="btn" style="width: 100%; background: var(--bg-200); color: var(--text-100); margin-top: 12px;">Help & Support</button>
+                        <button class="btn" style="width: 100%; background: var(--bg-200); color: var(--text-100); margin-top: 12px;">Privacy Policy</button>
+                    </div>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-target"></use>
+                        </svg>
+                        Goals
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-heart"></use>
+                        </svg>
+                        Affirm
+                    </a>
+                    <a href="#" class="tab-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-book"></use>
+                        </svg>
+                        Journal
+                    </a>
+                    <a href="#" class="tab-item active">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <use href="#icon-settings"></use>
+                        </svg>
+                        Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SVG Icons -->
+    <svg style="display: none;">
+        <symbol id="icon-home" viewBox="0 0 24 24">
+            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+        </symbol>
+        <symbol id="icon-target" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </symbol>
+        <symbol id="icon-heart" viewBox="0 0 24 24">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </symbol>
+        <symbol id="icon-book" viewBox="0 0 24 24">
+            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+        </symbol>
+        <symbol id="icon-settings" viewBox="0 0 24 24">
+            <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </symbol>
+        <symbol id="icon-sparkles" viewBox="0 0 24 24">
+            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+        </symbol>
+    </svg>
+
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes draw {
+            to { stroke-dashoffset: 0; }
+        }
+    </style>
+</body>
+</html>

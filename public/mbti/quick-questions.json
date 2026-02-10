@@ -1,0 +1,281 @@
+{
+  "zh-CN": [
+    {
+      "title": "1. 我在工作中最好的想法源自",
+      "selections": [
+        {
+          "text": "与他人交流想法并共同分享。",
+          "aiPrompt": "外向型(E)：通过与外界互动获取能量和灵感，善于社交沟通，重视团队协作，喜欢在讨论中激发创意，适合需要人际交往的工作环境。"
+        },
+        {
+          "text": "自己安静地思考。",
+          "aiPrompt": "内向型(I)：通过内在思考获取能量和灵感，善于独立工作，注重深度思考，喜欢安静专注的环境，更适合需要集中注意力的工作。"
+        }
+      ]
+    },
+    {
+      "title": "2. 当我主持会议时，我通常",
+      "selections": [
+        {
+          "text": "会严格按照我事先准备好的议程来进行。",
+          "aiPrompt": "判断型(J)：倾向于有计划、有组织地处理事务，重视结果和效率，喜欢按部就班地完成任务，做事条理清晰，目标明确。"
+        },
+        {
+          "text": "比较灵活，对出现的任何情况都持开放态度。",
+          "aiPrompt": "感知型(P)：倾向于灵活适应变化，重视过程和可能性，喜欢随机应变，对新事物保持开放，更具创造性和适应性。"
+        }
+      ]
+    },
+    {
+      "title": "3. 在处理下属的发展问题时，我最有可能",
+      "selections": [
+        {
+          "text": "讨论我对他/她行为方面存在的问题。",
+          "aiPrompt": "思维型(T)：倾向于关注客观事实和逻辑分析，处理问题以理性和原则为基础，重视公正性和一致性，善于找出问题的根本原因。"
+        },
+        {
+          "text": "不喜欢告诉他/她一些不愉快的事。",
+          "aiPrompt": "情感型(F)：倾向于关注他人感受和人际关系，处理问题以体谅和和谐为重，重视团队成员的感受，善于维护关系融洽。"
+        }
+      ]
+    },
+    {
+      "title": "4. 我更喜欢我工作的地方是",
+      "selections": [
+        {
+          "text": "有着明确规章制度、条理清晰的。",
+          "aiPrompt": "判断型(J)：偏好有序和可预测的环境，重视结构和规范，喜欢明确的指导方针，在规则清晰的环境中表现更好。"
+        },
+        {
+          "text": "更加开放式、宽松自由的。",
+          "aiPrompt": "感知型(P)：喜欢灵活和宽松的工作环境，能够适应变化，不受过多规则限制，在多变的环境中能充分发挥自己的适应能力。"
+        }
+      ]
+    },
+    {
+      "title": "5. 我更希望有一个与我",
+      "selections": [
+        {
+          "text": "每天都有大量互动的上级。",
+          "aiPrompt": "外向型(E)：需要频繁的人际互动和反馈来维持工作热情，喜欢与人建立良好关系，通过沟通保持对工作的投入感。"
+        },
+        {
+          "text": "只有偶尔互动的上级。",
+          "aiPrompt": "内向型(I)：倾向于独立自主，通过安静的工作环境而非频繁互动来保持专注，适合有相对独立空间的工作模式。"
+        }
+      ]
+    },
+    {
+      "title": "6. 我更喜欢把大部分时间花在",
+      "selections": [
+        {
+          "text": "所讨论想法的应用上。",
+          "aiPrompt": "感知型(S)：关注具体的事实和实际应用，重视现实和可实现的方案，在处理实际问题时表现最佳，喜欢看到切实的成果。"
+        },
+        {
+          "text": "想法本身上面。",
+          "aiPrompt": "直觉型(N)：关注抽象概念和长远可能性，重视创新和理论探讨，喜欢从多个角度思考问题，擅长看到更大的图景。"
+        }
+      ]
+    },
+    {
+      "title": "7. 我更喜欢这样一种工作环境：",
+      "selections": [
+        {
+          "text": "频繁的意见分歧能催生出有趣的讨论和想法。",
+          "aiPrompt": "思维型(T)：将分歧视为促进思考的机会，通过理性讨论来整合不同观点，认为健康的辩论能产生更好的解决方案。"
+        },
+        {
+          "text": "通过避免讨论意见分歧来减少冲突。",
+          "aiPrompt": "情感型(F)：更关注维护人际和谐，倾向于寻求共识和避免冲突，重视团队的团结和融洽的工作氛围。"
+        }
+      ]
+    }
+  ],
+  "en": [
+    {
+      "title": "1. My best ideas at work come from",
+      "selections": [
+        {
+          "text": "Sharing and discussing ideas with others.",
+          "aiPrompt": "Extroversion (E): Energize through interacting with others, excel at communication and teamwork, thrive in collaborative brainstorming, and work best in people-oriented environments."
+        },
+        {
+          "text": "Thinking quietly by myself.",
+          "aiPrompt": "Introversion (I): Energize through internal reflection, prefer independent work and deep thinking, thrive in focused, quiet environments, and excel in concentrated work."
+        }
+      ]
+    },
+    {
+      "title": "2. When I lead meetings, I usually",
+      "selections": [
+        {
+          "text": "Strictly follow my prepared agenda.",
+          "aiPrompt": "Judging (J): Planful, organized approach to tasks, focus on results and efficiency, prefer structured completion of work, clear goals and systematic processes."
+        },
+        {
+          "text": "Stay flexible and open to any developments.",
+          "aiPrompt": "Perceiving (P): Adaptable, flexible approach to change, focus on process and possibilities, enjoy spontaneity, embrace new things, creative and adaptive."
+        }
+      ]
+    },
+    {
+      "title": "3. When addressing a subordinate's development issues, I'm most likely to",
+      "selections": [
+        {
+          "text": "Discuss the behavioral issues I observe.",
+          "aiPrompt": "Thinking (T): Focus on objective facts and logical analysis, base decisions on principles and fairness, maintain consistency, identify root causes of problems."
+        },
+        {
+          "text": "Avoid telling them something unpleasant.",
+          "aiPrompt": "Feeling (F): Focus on others' emotions and relationships, base decisions on compassion and harmony, consider team members' feelings, maintain positive relationships."
+        }
+      ]
+    },
+    {
+      "title": "4. I prefer a workplace that is",
+      "selections": [
+        {
+          "text": "Clear with explicit rules and well-organized.",
+          "aiPrompt": "Judging (J): Prefer orderly and predictable environments, value structure and standards, appreciate clear guidelines, perform best with clear rules."
+        },
+        {
+          "text": "More open, relaxed and free.",
+          "aiPrompt": "Perceiving (P): Enjoy flexible and relaxed work environments, adapt well to change, thrive without excessive restrictions, excel in dynamic settings."
+        }
+      ]
+    },
+    {
+      "title": "5. I would prefer a boss with whom I",
+      "selections": [
+        {
+          "text": "Have lots of daily interaction.",
+          "aiPrompt": "Extroversion (E): Need frequent interaction and feedback to maintain enthusiasm, enjoy building relationships, stay engaged through communication."
+        },
+        {
+          "text": "Have only occasional interaction.",
+          "aiPrompt": "Introversion (I): Prefer independence and autonomy, maintain focus through quiet work rather than frequent interaction, thrive with workspace autonomy."
+        }
+      ]
+    },
+    {
+      "title": "6. I prefer to spend most of my time on",
+      "selections": [
+        {
+          "text": "Applying the ideas we discuss.",
+          "aiPrompt": "Sensing (S): Focus on concrete facts and practical applications, value reality and feasible solutions, excel at handling practical problems, appreciate tangible results."
+        },
+        {
+          "text": "The ideas themselves.",
+          "aiPrompt": "Intuition (N): Focus on abstract concepts and future possibilities, value innovation and theoretical discussion, view problems from multiple angles, appreciate the bigger picture."
+        }
+      ]
+    },
+    {
+      "title": "7. I prefer a work environment where",
+      "selections": [
+        {
+          "text": "Frequent disagreements spark interesting discussions and ideas.",
+          "aiPrompt": "Thinking (T): View disagreements as opportunities for deeper thinking, integrate perspectives through rational discussion, believe healthy debate produces better solutions."
+        },
+        {
+          "text": "Conflict is reduced by avoiding disagreement discussions.",
+          "aiPrompt": "Feeling (F): Value maintaining harmony, seek consensus and avoid conflict, prioritize team unity and a harmonious work atmosphere."
+        }
+      ]
+    }
+  ],
+  "zh-TW": [
+    {
+      "title": "1. 我在工作中最好的想法來自",
+      "selections": [
+        {
+          "text": "與他人交流想法並共同分享。",
+          "aiPrompt": "外向型(E)：透過與外界互動獲取能量和靈感，善於社交溝通，重視團隊協作，喜歡在討論中激發創意，適合需要人際交往的工作環境。"
+        },
+        {
+          "text": "自己安靜地思考。",
+          "aiPrompt": "內向型(I)：透過內在思考獲取能量和靈感，善於獨立工作，注重深度思考，喜歡安靜專注的環境，更適合需要集中注意力的工作。"
+        }
+      ]
+    },
+    {
+      "title": "2. 當我主持會議時，我通常",
+      "selections": [
+        {
+          "text": "會嚴格按照我事先準備好的議程來進行。",
+          "aiPrompt": "判斷型(J)：傾向於有計劃、有組織地處理事務，重視結果和效率，喜歡按部就班地完成任務，做事條理清晰，目標明確。"
+        },
+        {
+          "text": "比較靈活，對出現的任何情況都持開放態度。",
+          "aiPrompt": "感知型(P)：傾向於靈活適應變化，重視過程和可能性，喜歡隨機應變，對新事物保持開放，更具創造性和適應性。"
+        }
+      ]
+    },
+    {
+      "title": "3. 在處理下屬的發展問題時，我最有可能",
+      "selections": [
+        {
+          "text": "討論我對他/她行為方面存在的問題。",
+          "aiPrompt": "思維型(T)：傾向於關注客觀事實和邏輯分析，處理問題以理性和原則為基礎，重視公正性和一致性，善於找出問題的根本原因。"
+        },
+        {
+          "text": "不喜歡告訴他/她一些不愉快的事。",
+          "aiPrompt": "情感型(F)：傾向於關注他人感受和人際關係，處理問題以體諒和和諧為重，重視團隊成員的感受，善於維護關係融洽。"
+        }
+      ]
+    },
+    {
+      "title": "4. 我更喜歡我工作的地方是",
+      "selections": [
+        {
+          "text": "有著明確規章制度、條理清晰的。",
+          "aiPrompt": "判斷型(J)：偏好有序和可預測的環境，重視結構和規範，喜歡明確的指導方針，在規則清晰的環境中表現更好。"
+        },
+        {
+          "text": "更加開放式、寬鬆自由的。",
+          "aiPrompt": "感知型(P)：喜歡靈活和寬鬆的工作環境，能夠適應變化，不受過多規則限制，在多變的環境中能充分發揮自己的適應能力。"
+        }
+      ]
+    },
+    {
+      "title": "5. 我更希望有一個與我",
+      "selections": [
+        {
+          "text": "每天都有大量互動的上級。",
+          "aiPrompt": "外向型(E)：需要頻繁的人際互動和反饋來維持工作熱情，喜歡與人建立良好關係，透過溝通保持對工作的投入感。"
+        },
+        {
+          "text": "只有偶爾互動的上級。",
+          "aiPrompt": "內向型(I)：傾向於獨立自主，透過安靜的工作環境而非頻繁互動來保持專注，適合有相對獨立空間的工作模式。"
+        }
+      ]
+    },
+    {
+      "title": "6. 我更喜歡把大部分時間花在",
+      "selections": [
+        {
+          "text": "所討論想法的應用上。",
+          "aiPrompt": "感知型(S)：關注具體的事實和實際應用，重視現實和可實現的方案，在處理實際問題時表現最佳，喜歡看到切實的成果。"
+        },
+        {
+          "text": "想法本身上面。",
+          "aiPrompt": "直覺型(N)：關注抽象概念和長遠可能性，重視創新和理論探討，喜歡從多個角度思考問題，擅長看到更大的圖景。"
+        }
+      ]
+    },
+    {
+      "title": "7. 我更喜歡這樣一種工作環境：",
+      "selections": [
+        {
+          "text": "頻繁的意見分歧能催生出有趣的討論和想法。",
+          "aiPrompt": "思維型(T)：將分歧視為促進思考的機會，透過理性討論來整合不同觀點，認為健康的辯論能產生更好的解決方案。"
+        },
+        {
+          "text": "通過避免討論意見分歧來減少衝突。",
+          "aiPrompt": "情感型(F)：更關注維護人際和諧，傾向於尋求共識和避免衝突，重視團隊的團結和融洽的工作氛圍。"
+        }
+      ]
+    }
+  ]
+}
