@@ -1,7 +1,7 @@
 {
-  "version": "v0.0.1",
-  "fullVersion": "v0.0.1+2026-02-10",
-  "buildTime": "2026-02-10T14:02:39.262Z",
-  "commit": "a087f53a48d7c818380cb2121de0df82514cf470",
+  "version": "v0.0.2",
+  "fullVersion": "v0.0.2+2026-02-10",
+  "buildTime": "2026-02-10T14:03:57.044Z",
+  "commit": "156a8fa86287c1388d1e9ff6eb6466342d63d3b6",
   "branch": "main"
 }
