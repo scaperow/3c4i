@@ -5,6 +5,9 @@ import zhTW from '@/src/locales/zh-TW.json'
 
 export const dynamic = 'force-dynamic'
 
+// Configure Edge Runtime for Cloudflare Workers
+export const runtime = 'edge'
+
 const locales: Record<string, any> = {
   en: en,
   'zh-CN': zhCN,

@@ -1,18 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="format-detection" content="telephone=no,address=no">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
-  <title>大罗洞观</title>
-  <meta charset="utf-8" />
-  <script type="module" src="/src/main.tsx"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3C4I Portal - 智能命理门户</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #050505 0%, #111 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .header {
+            margin-bottom: 60px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: 900;
+            color: #EB4432;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #888;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            color: #666;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px 30px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-card:hover {
+            border-color: #EB4432;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(235, 68, 50, 0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #EB4432 0%, #D43D2D 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 24px;
+        }
+        
+        .feature-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+        
+        .feature-desc {
+            font-size: 16px;
+            color: #999;
+            line-height: 1.6;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .link-button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #EB4432 0%, #D43D2D 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(235, 68, 50, 0.3);
+        }
+        
+        .status {
+            background: rgba(235, 68, 50, 0.1);
+            border: 1px solid rgba(235, 68, 50, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .status-title {
+            color: #EB4432;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .status-text {
+            color: #999;
+            font-size: 14px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .logo {
+                font-size: 36px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div id="app"></div>
+    <div class="container">
+        <div class="header">
+            <div class="logo">3C4I</div>
+            <div class="subtitle">智能命理门户</div>
+            <div class="tagline">// THREE CORE FORCES × INTELLIGENCE</div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🔮</div>
+                <div class="feature-title">智能八字</div>
+                <div class="feature-desc">融合传统命理学与现代AI技术，精准分析个人命盘，洞察人生运势走向</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-title">MBTI测试</div>
+                <div class="feature-desc">基于荣格心理学理论，深度解析人格特质，提供职业发展建议</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <div class="feature-title">AI起名</div>
+                <div class="feature-desc">结合五行学说与音韵美学，智能生成富有文化内涵的中文名字</div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="/bazi" class="link-button">智能八字</a>
+            <a href="/mbti" class="link-button">MBTI测试</a>
+            <a href="/ainame" class="link-button">AI起名</a>
+        </div>
+        
+        <div class="status">
+            <div class="status-title">部署状态</div>
+            <div class="status-text">静态版本 - 完整功能请使用本地开发环境</div>
+        </div>
+        
+        <div class="footer">
+            © 2024 3C4I Portal. All rights reserved.<br>
+            融合东方智慧与现代科技
+        </div>
+    </div>
+    
+    <script>
+        // 添加一些交互效果
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+        
+        // 模拟动态效果
+        const tagline = document.querySelector('.tagline');
+        let visible = true;
+        setInterval(() => {
+            visible = !visible;
+            tagline.style.opacity = visible ? '1' : '0.5';
+        }, 2000);
+    </script>
 </body>
 </html>

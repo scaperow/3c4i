@@ -16,7 +16,8 @@ import {
   NeoRadioItem,
   NeoToast,
   NeoToastProvider,
-  NeoToastViewport
+  NeoToastViewport,
+  PALETTE
 } from '@/components/NeoChinese'
 import { useTranslation, Trans } from 'react-i18next'
 import * as Toast from '@radix-ui/react-toast'

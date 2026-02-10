@@ -1,10 +1,7 @@
 /**
  * 运行时配置管理
- * 允许在运行时动态修改 AI 配置，而无需重启服务
+ * 支持 Edge Runtime（Cloudflare Workers）
  */
-
-import fs from 'fs'
-import path from 'path'
 
 // 运行时配置接口
 export interface RuntimeConfig {
@@ -42,11 +39,16 @@ const defaultRuntimeConfig: RuntimeConfig = {
   enableDebugLog: false,
 }
 
-// 配置文件路径
-const CONFIG_FILE = path.join(process.cwd(), '.runtime-config.json')
+// 使用全局变量存储配置（Edge Runtime 兼容）
+declare global {
+  // eslint-disable-next-line no-var
+  var __RUNTIME_CONFIG_CACHE__: RuntimeConfig | null | undefined
+}
 
-// 内存缓存
-let cachedConfig: RuntimeConfig | null = null
+// 初始化全局缓存
+if (typeof globalThis.__RUNTIME_CONFIG_CACHE__ === 'undefined') {
+  globalThis.__RUNTIME_CONFIG_CACHE__ = null
+}
 
 /**
  * 从环境变量初始化配置
@@ -79,31 +81,22 @@ function initFromEnv(): RuntimeConfig {
 
 /**
  * 加载运行时配置
+ * 注意：在 Edge Runtime 中，配置存储在内存中，不会持久化到文件系统
  */
 export function loadRuntimeConfig(): RuntimeConfig {
   // 如果有缓存，直接返回
-  if (cachedConfig) {
-    return cachedConfig
-  }
-
-  try {
-    // 尝试从文件读取
-    if (fs.existsSync(CONFIG_FILE)) {
-      const fileContent = fs.readFileSync(CONFIG_FILE, 'utf-8')
-      cachedConfig = JSON.parse(fileContent)
-      return cachedConfig!
-    }
-  } catch (e) {
-    console.error('Failed to load runtime config:', e)
+  if (globalThis.__RUNTIME_CONFIG_CACHE__) {
+    return globalThis.__RUNTIME_CONFIG_CACHE__
   }
 
   // 从环境变量初始化
-  cachedConfig = initFromEnv()
-  return cachedConfig
+  globalThis.__RUNTIME_CONFIG_CACHE__ = initFromEnv()
+  return globalThis.__RUNTIME_CONFIG_CACHE__
 }
 
 /**
  * 保存运行时配置
+ * 注意：在 Edge Runtime 中，配置仅保存在内存中
  */
 export function saveRuntimeConfig(config: Partial<RuntimeConfig>): RuntimeConfig {
   const currentConfig = loadRuntimeConfig()
@@ -113,14 +106,7 @@ export function saveRuntimeConfig(config: Partial<RuntimeConfig>): RuntimeConfig
     updatedAt: new Date().toISOString(),
   }
 
-  try {
-    fs.writeFileSync(CONFIG_FILE, JSON.stringify(newConfig, null, 2), 'utf-8')
-    cachedConfig = newConfig
-  } catch (e) {
-    console.error('Failed to save runtime config:', e)
-    throw new Error('无法保存配置文件')
-  }
-
+  globalThis.__RUNTIME_CONFIG_CACHE__ = newConfig
   return newConfig
 }
 
@@ -128,15 +114,7 @@ export function saveRuntimeConfig(config: Partial<RuntimeConfig>): RuntimeConfig
  * 重置为默认配置
  */
 export function resetRuntimeConfig(): RuntimeConfig {
-  try {
-    if (fs.existsSync(CONFIG_FILE)) {
-      fs.unlinkSync(CONFIG_FILE)
-    }
-  } catch (e) {
-    console.error('Failed to delete config file:', e)
-  }
-
-  cachedConfig = null
+  globalThis.__RUNTIME_CONFIG_CACHE__ = null
   return loadRuntimeConfig()
 }
 
@@ -144,7 +122,7 @@ export function resetRuntimeConfig(): RuntimeConfig {
  * 清除缓存，强制重新加载
  */
 export function clearConfigCache(): void {
-  cachedConfig = null
+  globalThis.__RUNTIME_CONFIG_CACHE__ = null
 }
 
 /**

@@ -8,6 +8,9 @@ import {
   type RuntimeConfig
 } from '@/lib/ai/runtime-config'
 
+// Configure Edge Runtime for Cloudflare Workers
+export const runtime = 'edge'
+
 // GET - 获取当前配置
 export async function GET() {
   try {

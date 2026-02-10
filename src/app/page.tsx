@@ -206,7 +206,7 @@ export default function AIBaziPortal() {
   }
 
   return (
-    <PageLayout showNav={true}>
+    <PageLayout>
       {/* HERO SECTION */}
       <section className="min-h-[85vh] flex flex-col justify-center mb-32 relative">
         {/* Vertical Couplet Decoration (Left) */}

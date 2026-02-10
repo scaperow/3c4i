@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { loadRuntimeConfig } from '@/lib/ai/runtime-config'
 
+// Configure Edge Runtime for Cloudflare Workers
+export const runtime = 'edge'
+
 // POST - 测试 AI 连接
 export async function POST(request: NextRequest) {
   try {
